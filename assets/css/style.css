@@ -1,0 +1,66 @@
+:root{
+   --color-rosa:rgb(242, 162, 169);
+   --color-celeste:#A7D9CB;
+   --color-marron:#BF8845;
+   --color-negro:#0D0D0D;
+   --color-blanco:#F2F2F2;
+   --color-blanco-oscuro:#d2d2d2;
+   --color-rosa-claro:rgb(249 240 241);
+   --color-celeste-claro:#d8e8e4;
+}
+
+html{
+    scroll-behavior: smooth;
+    font-stretch: condensed;
+    width: 98%;
+    margin: auto;
+    
+}
+
+body {
+    box-sizing: border-box;
+    background-color: var(--color-rosa-claro);
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+    color: var(--color-negro);
+}
+
+ol, ul,li {
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: var(--color-de-link);
+}
+
+.texto-centrado{
+    text-align: center;
+}
+
+.texto-justificado{
+    text-align: justify;
+}
+
+.boton{
+    background-color: transparent;
+    border: 1px solid var(--color-marron);
+    color: var(--color-marron);
+    padding: .5rem 1.5rem;
+    font-size: .75rem;
+    border-radius: .25rem;
+}
+
+.boton:hover{
+    background-color: var(--color-rosa);
+    color: var(--color-rosa-claro);
+    transition: all .3s linear;
+    cursor: pointer;
+}
+
+/*Tablet*/
+@media screen and (min-width: 768px) {
+   
+}

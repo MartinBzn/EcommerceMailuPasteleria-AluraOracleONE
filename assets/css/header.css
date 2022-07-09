@@ -1,0 +1,79 @@
+.cabecera{
+    display: grid;
+    grid-template-areas:
+        "logo logo"
+        "buscar btn-login";
+    padding-top: 0.5rem;
+    justify-content: space-around;
+    align-items: center;
+    align-content: stretch;
+    row-gap: .5rem;
+}
+
+.cabecera__logo{
+    grid-area: logo;
+    display: flex;
+    align-items: center;
+    margin: auto 0;
+}
+
+.cabecera__logo__imagen{
+    display: flex;
+}
+
+.cabecera__logo__imagen img{
+    width: 3rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.cabecera__logo__texto{   
+    
+    color: var(--color-rosa);
+    margin-left: auto 0 auto 0.25rem;
+    
+    font-family: 'Dancing Script', cursive;
+    font-size: 1.5rem;
+    font-style: italic;
+    text-shadow: 0.5px 0.5px 1px var(--color-negro);
+}
+
+.cabecera__boton-inicio{
+    grid-area: btn-login;
+    margin: auto;
+    
+}
+
+.cabecera__boton-inicio__boton{
+    font-size: .75rem;
+}
+
+.cabecera__buscar{
+    grid-area: buscar;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: var(--color-celeste-claro);
+    border-radius: 5rem;
+    padding: 0.25rem;
+
+}
+
+.cabecera__buscar__input, .cabecera__buscar__boton{
+    height: 1.5rem;
+    padding: 0;
+    margin: 0;
+    border: none;
+    background-color: transparent;
+}
+
+.cabecera__buscar__input{
+    width: 90%;
+    padding-left: .25rem;
+    border-bottom-left-radius: 5rem;
+    border-top-left-radius: 5rem;
+}
+
+.cabecera__buscar__input:focus{
+    outline: none;
+}
