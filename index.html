@@ -23,12 +23,14 @@
 <body>
     <header>
         <div class="cabecera" id="cabecera">
-            <div class="cabecera__logo">
-                <div class="cabecera__logo__imagen">
-                    <img src="./assets/img/logo_fondo_transparente.png" alt="Logo Mailu" srcset="">
+            <a href="index.html">
+                <div class="cabecera__logo">
+                    <div class="cabecera__logo__imagen">
+                        <img src="./assets/img/logo_fondo_transparente.png" alt="Logo Mailu" srcset="">
+                    </div>
+                    <span class="cabecera__logo__texto">Mailu Pastelería Artesanal</span>    
                 </div>
-                <span class="cabecera__logo__texto">Mailu Pastelería Artesanal</span>    
-            </div>
+            </a>
 
             <div class="cabecera__buscar">
                 <input type="text" name="cabecera-input-buscar" id="cabecera-input-buscar" class="cabecera__buscar__input" placeholder="Busquemos algo...">
@@ -54,20 +56,20 @@
         </section>
 
         <section class="contenedor productos">
-            <div class=" productos__seccion clasicos">
+
+            <!-- Seccion de productos Clásicos -->
+            <div class="contenedor productos__seccion clasicos">
                 <div class="producto__seccion__titulo">
                     <h3 class="producto__seccion__titulo__titulo">
                         Clásicos
                     </h3>
                     <div class="producto__seccion__titulo__link">
-                        <a href="#">
-                            <span class="producto__seccion__titulo__link-texto">Ver todos</span>
-                            <div class="producto__seccion__titulo__link-flechas">
-                                <img src="assets/img/doble_flecha_derecha.svg" alt="Ver Todos" >
-                            </div>
+                        <a href="#" class="vinculo">
+                            <span class="producto__seccion__titulo__link-texto">Ver todos >></span>
                         </a>
                     </div>
                 </div>
+
                 <div class="productos__seccion__tarjetas">
 
                     <div class="productos__seccion__tarjetas__tarjeta">
@@ -77,50 +79,257 @@
 
                         <div class="productos__seccion__tarjetas__tarjeta__textos">
                             <h4 class="productos__seccion__tarjetas__tarjeta__textos__nombre">Rogel</h4>
-                            <p class="productos__seccion__tarjetas__tarjeta__textos__precio">$2.000,00</p>
-                            <a href="#" class="productos__seccion_tarjetas__tarjeta__textos__link">Ver todos</a>
+                            <p class="productos__seccion__tarjetas__tarjeta__textos__precio">$ 2.000,00</p>
+                            <a href="#" class="vinculo productos__seccion_tarjetas__tarjeta__textos__link">Ver todos</a>
                         </div>
                     </div>
 
                     <div class="productos__seccion__tarjetas__tarjeta">
                         <div class="productos__seccion__tarjetas__tarjeta__imagen">
-                            <img src="/assets/img/Productos/Rogel2.png" alt="">
+                            <img src="/assets/img/Productos/SelvaNegra.jpg" alt="">
                         </div>
 
                         <div class="productos__seccion__tarjetas__tarjeta__textos">
-                            <h4 class="productos__seccion__tarjetas__tarjeta__textos__nombre">Rogel</h4>
-                            <p class="productos__seccion__tarjetas__tarjeta__textos__precio">$2.000,00</p>
-                            <a href="#" class="productos__seccion_tarjetas__tarjeta__textos__link">Ver todos</a>
+                            <h4 class="productos__seccion__tarjetas__tarjeta__textos__nombre">Selva Negra</h4>
+                            <p class="productos__seccion__tarjetas__tarjeta__textos__precio">$ 5.000,00</p>
+                            <a href="#" class="vinculo productos__seccion_tarjetas__tarjeta__textos__link">Ver todos</a>
                         </div>
                     </div>
 
                     <div class="productos__seccion__tarjetas__tarjeta">
                         <div class="productos__seccion__tarjetas__tarjeta__imagen">
-                            <img src="/assets/img/Productos/Rogel2.png" alt="">
+                            <img src="/assets/img/Productos/Balcarce.jpg" alt="">
                         </div>
 
                         <div class="productos__seccion__tarjetas__tarjeta__textos">
-                            <h4 class="productos__seccion__tarjetas__tarjeta__textos__nombre">Rogel</h4>
-                            <p class="productos__seccion__tarjetas__tarjeta__textos__precio">$2.000,00</p>
-                            <a href="#" class="productos__seccion_tarjetas__tarjeta__textos__link">Ver todos</a>
+                            <h4 class="productos__seccion__tarjetas__tarjeta__textos__nombre">Balcarce</h4>
+                            <p class="productos__seccion__tarjetas__tarjeta__textos__precio">$ 6.000,00</p>
+                            <a href="#" class="vinculo productos__seccion_tarjetas__tarjeta__textos__link">Ver todos</a>
                         </div>
                     </div>
 
                     <div class="productos__seccion__tarjetas__tarjeta">
                         <div class="productos__seccion__tarjetas__tarjeta__imagen">
-                            <img src="/assets/img/Productos/Rogel2.png" alt="">
+                            <img src="/assets/img/Productos/Molino.jpg" alt="">
                         </div>
 
                         <div class="productos__seccion__tarjetas__tarjeta__textos">
-                            <h4 class="productos__seccion__tarjetas__tarjeta__textos__nombre">Rogel</h4>
-                            <p class="productos__seccion__tarjetas__tarjeta__textos__precio">$2.000,00</p>
-                            <a href="#" class="productos__seccion_tarjetas__tarjeta__textos__link">Ver todos</a>
+                            <h4 class="productos__seccion__tarjetas__tarjeta__textos__nombre">Molino</h4>
+                            <p class="productos__seccion__tarjetas__tarjeta__textos__precio">$ 6.000,00</p>
+                            <a href="#" class="vinculo productos__seccion_tarjetas__tarjeta__textos__link">Ver todos</a>
+                        </div>
+                    </div>
+
+                    <div class="productos__seccion__tarjetas__tarjeta">
+                        <div class="productos__seccion__tarjetas__tarjeta__imagen">
+                            <img src="/assets/img/Productos/Fraisier.jpg" alt="">
+                        </div>
+
+                        <div class="productos__seccion__tarjetas__tarjeta__textos">
+                            <h4 class="productos__seccion__tarjetas__tarjeta__textos__nombre">Fraisier</h4>
+                            <p class="productos__seccion__tarjetas__tarjeta__textos__precio">$ 8.000,00</p>
+                            <a href="#" class="vinculo productos__seccion_tarjetas__tarjeta__textos__link">Ver todos</a>
+                        </div>
+                    </div>
+
+                    <div class="productos__seccion__tarjetas__tarjeta">
+                        <div class="productos__seccion__tarjetas__tarjeta__imagen">
+                            <img src="/assets/img/Productos/Charlotte.jpg" alt="">
+                        </div>
+
+                        <div class="productos__seccion__tarjetas__tarjeta__textos">
+                            <h4 class="productos__seccion__tarjetas__tarjeta__textos__nombre">Charlotte</h4>
+                            <p class="productos__seccion__tarjetas__tarjeta__textos__precio">$ 8.000,00</p>
+                            <a href="#" class="vinculo productos__seccion_tarjetas__tarjeta__textos__link">Ver todos</a>
                         </div>
                     </div>
 
                 </div>
                 
             </div>
+
+            <!-- Seccion de productos Tematicos -->
+            <div class="contenedor productos__seccion tematicas">
+                <div class="producto__seccion__titulo">
+                    <h3 class="producto__seccion__titulo__titulo">
+                        Temáticas
+                    </h3>
+                    <div class="producto__seccion__titulo__link">
+                        <a href="#">
+                            <span class="vinculo producto__seccion__titulo__link-texto">Ver todos >> </span>
+                        </a>
+                    </div>
+                </div>
+                <div class="productos__seccion__tarjetas">
+
+                    <div class="productos__seccion__tarjetas__tarjeta">
+                        <div class="productos__seccion__tarjetas__tarjeta__imagen">
+                            <img src="/assets/img/Productos/Futbol.JPG" alt="">
+                        </div>
+
+                        <div class="productos__seccion__tarjetas__tarjeta__textos">
+                            <h4 class="productos__seccion__tarjetas__tarjeta__textos__nombre">Fútbol</h4>
+                            <p class="productos__seccion__tarjetas__tarjeta__textos__precio">$7.000,00</p>
+                            <a href="#" class="vinculo productos__seccion_tarjetas__tarjeta__textos__link">Ver todos</a>
+                        </div>
+                    </div>
+
+                    <div class="productos__seccion__tarjetas__tarjeta">
+                        <div class="productos__seccion__tarjetas__tarjeta__imagen">
+                            <img src="/assets/img/Productos/Unicornio.png" alt="">
+                        </div>
+
+                        <div class="productos__seccion__tarjetas__tarjeta__textos">
+                            <h4 class="productos__seccion__tarjetas__tarjeta__textos__nombre">Unicornio</h4>
+                            <p class="productos__seccion__tarjetas__tarjeta__textos__precio">$5.000,00</p>
+                            <a href="#" class="vinculo productos__seccion_tarjetas__tarjeta__textos__link">Ver todos</a>
+                        </div>
+                    </div>
+
+                    <div class="productos__seccion__tarjetas__tarjeta">
+                        <div class="productos__seccion__tarjetas__tarjeta__imagen">
+                            <img src="/assets/img/Productos/Personajes.jpg" alt="">
+                        </div>
+
+                        <div class="productos__seccion__tarjetas__tarjeta__textos">
+                            <h4 class="productos__seccion__tarjetas__tarjeta__textos__nombre">Personajes</h4>
+                            <p class="productos__seccion__tarjetas__tarjeta__textos__precio">$5.000,00</p>
+                            <a href="#" class="vinculo productos__seccion_tarjetas__tarjeta__textos__link">Ver todos</a>
+                        </div>
+                    </div>
+
+                    <div class="productos__seccion__tarjetas__tarjeta">
+                        <div class="productos__seccion__tarjetas__tarjeta__imagen">
+                            <img src="/assets/img/Productos/Casamiento.png" alt="">
+                        </div>
+
+                        <div class="productos__seccion__tarjetas__tarjeta__textos">
+                            <h4 class="productos__seccion__tarjetas__tarjeta__textos__nombre">Casamiento</h4>
+                            <p class="productos__seccion__tarjetas__tarjeta__textos__precio">$9.000,00</p>
+                            <a href="#" class="vinculo productos__seccion_tarjetas__tarjeta__textos__link">Ver todos</a>
+                        </div>
+                    </div>
+
+                    <div class="productos__seccion__tarjetas__tarjeta">
+                        <div class="productos__seccion__tarjetas__tarjeta__imagen">
+                            <img src="/assets/img/Productos/Varios.jpg" alt="">
+                        </div>
+
+                        <div class="productos__seccion__tarjetas__tarjeta__textos">
+                            <h4 class="productos__seccion__tarjetas__tarjeta__textos__nombre">Decoradas</h4>
+                            <p class="productos__seccion__tarjetas__tarjeta__textos__precio">$7.000,00</p>
+                            <a href="#" class="vinculo productos__seccion_tarjetas__tarjeta__textos__link">Ver todos</a>
+                        </div>
+                    </div>
+
+                    <div class="productos__seccion__tarjetas__tarjeta">
+                        <div class="productos__seccion__tarjetas__tarjeta__imagen">
+                            <img src="/assets/img/Productos/Adultos.png" alt="">
+                        </div>
+
+                        <div class="productos__seccion__tarjetas__tarjeta__textos">
+                            <h4 class="productos__seccion__tarjetas__tarjeta__textos__nombre">Adultos</h4>
+                            <p class="productos__seccion__tarjetas__tarjeta__textos__precio">$7.000,00</p>
+                            <a href="#" class="vinculo productos__seccion_tarjetas__tarjeta__textos__link">Ver todos</a>
+                        </div>
+                    </div>
+
+
+                </div>
+                
+            </div>
+
+            <!-- Seccion de productos Tentaciones -->
+            <div class="contenedor productos__seccion tentaciones">
+                <div class="producto__seccion__titulo">
+                    <h3 class="producto__seccion__titulo__titulo">
+                        Tentaciones
+                    </h3>
+                    <div class="producto__seccion__titulo__link">
+                        <a href="#">
+                            <span class="vinculo producto__seccion__titulo__link-texto">Ver todos >> </span>
+                        </a>
+                    </div>
+                </div>
+                <div class="productos__seccion__tarjetas">
+
+                    <div class="productos__seccion__tarjetas__tarjeta">
+                        <div class="productos__seccion__tarjetas__tarjeta__imagen">
+                            <img src="/assets/img/Productos/Brownie.jpg" alt="">
+                        </div>
+
+                        <div class="productos__seccion__tarjetas__tarjeta__textos">
+                            <h4 class="productos__seccion__tarjetas__tarjeta__textos__nombre">Brownie</h4>
+                            <p class="productos__seccion__tarjetas__tarjeta__textos__precio">$3.000,00</p>
+                            <a href="#" class="vinculo productos__seccion_tarjetas__tarjeta__textos__link">Ver todos</a>
+                        </div>
+                    </div>
+
+                    <div class="productos__seccion__tarjetas__tarjeta">
+                        <div class="productos__seccion__tarjetas__tarjeta__imagen">
+                            <img src="/assets/img/Productos/Cheesecake.png" alt="">
+                        </div>
+
+                        <div class="productos__seccion__tarjetas__tarjeta__textos">
+                            <h4 class="productos__seccion__tarjetas__tarjeta__textos__nombre">Cheesecake</h4>
+                            <p class="productos__seccion__tarjetas__tarjeta__textos__precio">$2.500,00</p>
+                            <a href="#" class="vinculo productos__seccion_tarjetas__tarjeta__textos__link">Ver todos</a>
+                        </div>
+                    </div>
+
+                    <div class="productos__seccion__tarjetas__tarjeta">
+                        <div class="productos__seccion__tarjetas__tarjeta__imagen">
+                            <img src="/assets/img/Productos/Lemon Pie.jpg" alt="">
+                        </div>
+
+                        <div class="productos__seccion__tarjetas__tarjeta__textos">
+                            <h4 class="productos__seccion__tarjetas__tarjeta__textos__nombre">Lemon Pie</h4>
+                            <p class="productos__seccion__tarjetas__tarjeta__textos__precio">$2.500,00</p>
+                            <a href="#" class="vinculo productos__seccion_tarjetas__tarjeta__textos__link">Ver todos</a>
+                        </div>
+                    </div>
+
+
+                    <div class="productos__seccion__tarjetas__tarjeta">
+                        <div class="productos__seccion__tarjetas__tarjeta__imagen">
+                            <img src="/assets/img/Productos/Marquise.jpg" alt="">
+                        </div>
+
+                        <div class="productos__seccion__tarjetas__tarjeta__textos">
+                            <h4 class="productos__seccion__tarjetas__tarjeta__textos__nombre">Marquise</h4>
+                            <p class="productos__seccion__tarjetas__tarjeta__textos__precio">$4.000,00</p>
+                            <a href="#" class="vinculo productos__seccion_tarjetas__tarjeta__textos__link">Ver todos</a>
+                        </div>
+                    </div>
+
+                    <div class="productos__seccion__tarjetas__tarjeta">
+                        <div class="productos__seccion__tarjetas__tarjeta__imagen">
+                            <img src="/assets/img/Productos/Pastafrola.jpeg" alt="">
+                        </div>
+
+                        <div class="productos__seccion__tarjetas__tarjeta__textos">
+                            <h4 class="productos__seccion__tarjetas__tarjeta__textos__nombre">Pastafrola</h4>
+                            <p class="productos__seccion__tarjetas__tarjeta__textos__precio">$2.000,00</p>
+                            <a href="#" class="vinculo productos__seccion_tarjetas__tarjeta__textos__link">Ver todos</a>
+                        </div>
+                    </div>
+
+                    <div class="productos__seccion__tarjetas__tarjeta">
+                        <div class="productos__seccion__tarjetas__tarjeta__imagen">
+                            <img src="/assets/img/Productos/Tarta-Chocolate.png" alt="">
+                        </div>
+
+                        <div class="productos__seccion__tarjetas__tarjeta__textos">
+                            <h4 class="productos__seccion__tarjetas__tarjeta__textos__nombre">Tarta de Chocoltate</h4>
+                            <p class="productos__seccion__tarjetas__tarjeta__textos__precio">$4.000,00</p>
+                            <a href="#" class="vinculo productos__seccion_tarjetas__tarjeta__textos__link">Ver todos</a>
+                        </div>
+                    </div>
+
+                </div>
+                
+            </div>
+
         </section>
         
         <section class="contenedor nosotros">
@@ -134,12 +343,12 @@
             <div class="nosotros__menu">
                 <nav class="nosotros__menu__nav">
                     <ul class="nosotros__menu__lista">
-                        <li class="nosotros__menu_item"><a href="#">Quienes somos</a></li>
-                        <li class="nosotros__menu_item"><a href="#">Politica de Privacidad</a></li>
-                        <li class="nosotros__menu_item"><a href="#"></a>Programa de Fidelidad</li>
-                        <li class="nosotros__menu_item"><a href="#"></a>Nuestras Tiendas</li>
-                        <li class="nosotros__menu_item"><a href="#"></a>Quiero ser franquiciado</li>
-                        <li class="nosotros__menu_item"><a href="#"></a>Anúncie aquí</li>
+                        <li class=" nosotros__menu_item"><a href="#" class="vinculo">Quienes somos</a></li>
+                        <li class=" nosotros__menu_item"><a href="#" class="vinculo">Politica de Privacidad</a></li>
+                        <li class=" nosotros__menu_item"><a href="#" class="vinculo">Programa de Fidelidad</a></li>
+                        <li class=" nosotros__menu_item"><a href="#" class="vinculo">Nuestras Tiendas</a></li>
+                        <li class=" nosotros__menu_item"><a href="#" class="vinculo">Quiero ser franquiciado</a></li>
+                        <li class=" nosotros__menu_item"><a href="#" class="vinculo">Anúncie aquí</a></li>
                     </ul>
                 </nav>
             </div>    

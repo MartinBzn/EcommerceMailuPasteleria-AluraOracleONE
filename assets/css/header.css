@@ -10,8 +10,12 @@
     row-gap: .5rem;
 }
 
-.cabecera__logo{
+.cabecera a{
+    width: 100%;
     grid-area: logo;
+}
+
+.cabecera__logo{    
     display: flex;
     align-items: center;
     margin: auto 0;

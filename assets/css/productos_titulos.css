@@ -23,13 +23,3 @@
 .producto__seccion__titulo__link-texto{
     font-size: 1rem;
 }
-
-.producto__seccion__titulo__link-flechas{
-    width: 1rem;
-    height: 100%;
-}
-
-.producto__seccion__titulo__link-flechas img{
-    background-repeat: no-repeat;
-    background-size: cover;
-}

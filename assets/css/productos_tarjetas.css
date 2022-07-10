@@ -7,7 +7,10 @@
     width: calc(50% - 1.15rem);
     height: 16rem;
     margin: .5rem;
-    border: 1px solid blue;
+}
+
+.productos__seccion__tarjetas :nth-child(5), .productos__seccion__tarjetas :nth-child(6){
+    display: none;
 }
 
 .productos__seccion__tarjetas__tarjeta__imagen{

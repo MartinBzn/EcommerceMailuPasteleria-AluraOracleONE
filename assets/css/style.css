@@ -55,6 +55,16 @@ a{
     color: var(--color-negro);
 }
 
+.vinculo{
+    transition: all .5s;
+}
+
+.vinculo:hover{
+    text-decoration: underline;
+    color:var(--color-marron);
+    font-weight: bold;
+}
+
 .texto-centrado{
     text-align: center;
 }
