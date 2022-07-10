@@ -12,8 +12,11 @@
     margin: auto 0;
 }
 
+
 .nosotros__logo__imagen{
     display: flex;
+    border-radius: 100%;
+    background-color: var(--color-blanco);
 }
 
 .nosotros__logo__imagen img{
@@ -25,12 +28,15 @@
 .nosotros__logo__texto{   
     
     color: var(--color-rosa);
-    margin-left: auto 0 auto 0.25rem;
+    margin: auto 0 auto 0.25rem;
     
     font-family: 'Dancing Script', cursive;
     font-size: 1.5rem;
     font-style: italic;
-    text-shadow: 0.5px 0.5px 1px var(--color-negro);
+    text-shadow: 
+        0.5px 0.5px 1px var(--color-negro),
+        -0.5px -0.5px 1px var(--color-negro);
+
 }
 
 .nosotros__menu{
@@ -45,4 +51,32 @@
 
 .nosotros__menu_item{
     margin: .5rem auto;
+}
+
+@media screen and (min-width:768px) {
+
+    .nosotros{
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+    }
+
+    .nosotros__logo {
+        margin: 0;
+        flex-direction: column;
+        line-height: 1.5;
+    }
+    .nosotros__menu{
+        height: 100%;
+        justify-content: space-around;
+    }
+
+    .nosotros__menu__nav{
+        height: 95%;
+    }
+    
+    .nosotros__menu__lista{
+        height: 100%;
+        justify-content: space-around;
+    }
 }

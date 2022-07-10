@@ -7,14 +7,18 @@
     flex-direction: column;
 }
 
+.formcontacto__titulo{
+    margin: .5rem auto;
+}
+
 .formconctato__elemento{
-    margin: 0.5rem auto;
+    margin: 0.25rem auto;
     background-color: var(--color-celeste-claro);
     box-sizing: border-box;
     width: 100%;
     font-size: 1rem;
     font-family: inherit;
-    padding: 0.5rem;
+    padding: 0.125rem;
     border: none;
     border-radius: 0.5rem;
     transition: .3s all;
@@ -44,7 +48,7 @@
 .formcontacto__obligatorio{
     font-size: .75rem;
     font-style: italic;
-    color: antiquewhite;
+    color: var(--color-negro);
 }
 
 
@@ -63,7 +67,7 @@
     justify-content: center;
     animation: abrirVentana 1s;
 }
-/* 
+
 @keyframes abrirVentana{
     from{
         opacity: 0;
@@ -72,6 +76,7 @@
     }
 }
 
+/* 
 .ventana p, .ventana strong{
     color: black;
     text-shadow: none;

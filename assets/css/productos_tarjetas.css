@@ -36,3 +36,12 @@
     margin: .25rem;
     font-size: .85rem;
 }
+
+@media screen and (min-width:768px){
+
+    .productos__seccion__tarjetas__tarjeta{
+        width: calc(100% / 4 - .5rem);
+        height: 16rem;
+        margin: .25rem;
+    }    
+}

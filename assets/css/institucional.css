@@ -1,0 +1,17 @@
+.institucional{
+    display: flex;
+    flex-direction: column;
+}
+
+@media screen and (min-width:768px) {
+    .institucional{
+        flex-direction: row;
+        background-color: var(--color-celeste);
+    }
+
+    .nosotros, .contacto{
+        margin-top: .5rem;
+        padding: 0 .25rem;
+        background-color: transparent;
+    }
+}
