@@ -1,0 +1,48 @@
+.nosotros{
+    text-align: center;
+    background-color: var(--color-celeste-claro);
+    padding: 1rem .25rem;
+}
+
+.nosotros__logo{
+    grid-area: logo;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto 0;
+}
+
+.nosotros__logo__imagen{
+    display: flex;
+}
+
+.nosotros__logo__imagen img{
+    width: 3rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.nosotros__logo__texto{   
+    
+    color: var(--color-rosa);
+    margin-left: auto 0 auto 0.25rem;
+    
+    font-family: 'Dancing Script', cursive;
+    font-size: 1.5rem;
+    font-style: italic;
+    text-shadow: 0.5px 0.5px 1px var(--color-negro);
+}
+
+.nosotros__menu{
+    justify-content: center;
+}
+
+.nosotros__menu__lista{
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+}
+
+.nosotros__menu_item{
+    margin: .5rem auto;
+}

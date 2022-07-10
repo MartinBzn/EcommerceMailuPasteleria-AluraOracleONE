@@ -1,0 +1,29 @@
+.ventana {
+    flex-direction: column;
+    border: 7px double var(--color-rosa);
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 10px 10px 10px -1px black;
+    background-color: var(--color-blanco);
+    justify-content: center;
+    animation: abrirVentana 1s;
+}
+
+
+.ventana::backdrop {
+    background: rgba(0,0,0,.4);
+    backdrop-filter: blur(3px);
+}
+
+@keyframes abrirVentana{
+    from{
+        opacity: 0;
+    }to{
+        opacity: 1;
+    }
+}
+
+.ventana p, .ventana strong{
+    color: black;
+    text-shadow: none;
+}

@@ -1,0 +1,35 @@
+.producto__seccion__titulo{
+    width: 98%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: .5rem .25rem;
+}
+
+.producto__seccion__titulo__titulo{
+    margin: 0;
+}
+
+.producto__seccion__titulo__link a{
+    display: flex;
+}
+
+.producto__seccion__titulo__link{
+    align-items: center;
+
+}
+
+.producto__seccion__titulo__link-texto{
+    font-size: 1rem;
+}
+
+.producto__seccion__titulo__link-flechas{
+    width: 1rem;
+    height: 100%;
+}
+
+.producto__seccion__titulo__link-flechas img{
+    background-repeat: no-repeat;
+    background-size: cover;
+}

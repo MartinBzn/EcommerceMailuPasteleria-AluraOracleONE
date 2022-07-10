@@ -1,0 +1,107 @@
+.contacto{
+    padding: 0 .5rem;
+}
+
+.formconctato__form{
+    display: flex;
+    flex-direction: column;
+}
+
+.formconctato__elemento{
+    margin: 0.5rem auto;
+    background-color: var(--color-celeste-claro);
+    box-sizing: border-box;
+    width: 100%;
+    font-size: 1rem;
+    font-family: inherit;
+    padding: 0.5rem;
+    border: none;
+    border-radius: 0.5rem;
+    transition: .3s all;
+}
+
+.formconctato__elemento:focus{
+    background-color: var(--color-celeste);
+    box-shadow: 0px 0px 0.5rem 0.3rem var(--color-rosa);
+    outline: var(--color-marron);
+}
+
+.formcontacto__boton {    
+    margin: 0.5rem auto;
+    font-size: 1rem;
+    width: 100%;
+    background-color: var(--color-celeste-claro);
+    border-color: var(--color-negro);
+    color: var(--color-negro);
+    transition: all .3s;
+}
+
+.formcontacto__boton:hover {    
+    background-color: var(--color-rosa);
+    color: var(--color-blanco);
+}
+
+.formcontacto__obligatorio{
+    font-size: .75rem;
+    font-style: italic;
+    color: antiquewhite;
+}
+
+
+.ventana::backdrop {
+    background: rgba(0,0,0,.4);
+    backdrop-filter: blur(3px);
+}
+
+.ventana {
+    flex-direction: column;
+    border: 7px double darkblue;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 10px 10px 10px -1px black;
+    background-color: antiquewhite;
+    justify-content: center;
+    animation: abrirVentana 1s;
+}
+/* 
+@keyframes abrirVentana{
+    from{
+        opacity: 0;
+    }to{
+        opacity: 1;
+    }
+}
+
+.ventana p, .ventana strong{
+    color: black;
+    text-shadow: none;
+}
+
+@media screen and (min-width:1024px) {
+
+    .formcontacto__contacto{
+        display: flex;
+        flex-wrap: nowrap;
+    }
+
+    .formcontacto--izquierda{
+        display: block;
+        border-bottom-left-radius: 1rem;
+        border-top-left-radius: 1rem;
+        overflow: hidden;
+        opacity: .75;
+    }
+
+    .formcontacto__img{
+        height: 100%;
+        width: 100%;
+    }
+    
+    .formcontacto__text{
+        padding-left:3rem;
+    }
+
+    .formcontacto__titulo{
+        margin-top: 0;
+    } 
+} */

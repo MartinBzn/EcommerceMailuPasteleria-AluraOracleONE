@@ -7,6 +7,11 @@
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="./assets/css/header.css">
     <link rel="stylesheet" href="./assets/css/banner.css">
+    <link rel="stylesheet" href="./assets/css/productos_titulos.css">
+    <link rel="stylesheet" href="./assets/css/productos_tarjetas.css">
+    <link rel="stylesheet" href="./assets/css/nosotros.css">
+    <link rel="stylesheet" href="./assets/css/contacto.css">
+    <link rel="stylesheet" href="./assets/css/ventana_emergente.css">
     <link rel="stylesheet" href="./assets/css/footer.css">
     <script src="https://kit.fontawesome.com/b1e1a24514.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -17,7 +22,7 @@
 </head>
 <body>
     <header>
-        <div class="cabecera">
+        <div class="cabecera" id="cabecera">
             <div class="cabecera__logo">
                 <div class="cabecera__logo__imagen">
                     <img src="./assets/img/logo_fondo_transparente.png" alt="Logo Mailu" srcset="">
@@ -40,7 +45,7 @@
     </header>
 
     <main>
-        <section class="banner">
+        <section class="contenedor banner">
             <div class="banner__imagen">
                 <h1 class="banner__texto__titulo">Agosto Promocional</h1>
                 <h3 class="banner__texto__subtitulo">Productos seleccionados con 10% de descuento</h3>
@@ -48,16 +53,82 @@
             </div>
         </section>
 
-        <section class="productos">
+        <section class="contenedor productos">
+            <div class=" productos__seccion clasicos">
+                <div class="producto__seccion__titulo">
+                    <h3 class="producto__seccion__titulo__titulo">
+                        Clásicos
+                    </h3>
+                    <div class="producto__seccion__titulo__link">
+                        <a href="#">
+                            <span class="producto__seccion__titulo__link-texto">Ver todos</span>
+                            <div class="producto__seccion__titulo__link-flechas">
+                                <img src="assets/img/doble_flecha_derecha.svg" alt="Ver Todos" >
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="productos__seccion__tarjetas">
 
+                    <div class="productos__seccion__tarjetas__tarjeta">
+                        <div class="productos__seccion__tarjetas__tarjeta__imagen">
+                            <img src="/assets/img/Productos/Rogel2.png" alt="">
+                        </div>
+
+                        <div class="productos__seccion__tarjetas__tarjeta__textos">
+                            <h4 class="productos__seccion__tarjetas__tarjeta__textos__nombre">Rogel</h4>
+                            <p class="productos__seccion__tarjetas__tarjeta__textos__precio">$2.000,00</p>
+                            <a href="#" class="productos__seccion_tarjetas__tarjeta__textos__link">Ver todos</a>
+                        </div>
+                    </div>
+
+                    <div class="productos__seccion__tarjetas__tarjeta">
+                        <div class="productos__seccion__tarjetas__tarjeta__imagen">
+                            <img src="/assets/img/Productos/Rogel2.png" alt="">
+                        </div>
+
+                        <div class="productos__seccion__tarjetas__tarjeta__textos">
+                            <h4 class="productos__seccion__tarjetas__tarjeta__textos__nombre">Rogel</h4>
+                            <p class="productos__seccion__tarjetas__tarjeta__textos__precio">$2.000,00</p>
+                            <a href="#" class="productos__seccion_tarjetas__tarjeta__textos__link">Ver todos</a>
+                        </div>
+                    </div>
+
+                    <div class="productos__seccion__tarjetas__tarjeta">
+                        <div class="productos__seccion__tarjetas__tarjeta__imagen">
+                            <img src="/assets/img/Productos/Rogel2.png" alt="">
+                        </div>
+
+                        <div class="productos__seccion__tarjetas__tarjeta__textos">
+                            <h4 class="productos__seccion__tarjetas__tarjeta__textos__nombre">Rogel</h4>
+                            <p class="productos__seccion__tarjetas__tarjeta__textos__precio">$2.000,00</p>
+                            <a href="#" class="productos__seccion_tarjetas__tarjeta__textos__link">Ver todos</a>
+                        </div>
+                    </div>
+
+                    <div class="productos__seccion__tarjetas__tarjeta">
+                        <div class="productos__seccion__tarjetas__tarjeta__imagen">
+                            <img src="/assets/img/Productos/Rogel2.png" alt="">
+                        </div>
+
+                        <div class="productos__seccion__tarjetas__tarjeta__textos">
+                            <h4 class="productos__seccion__tarjetas__tarjeta__textos__nombre">Rogel</h4>
+                            <p class="productos__seccion__tarjetas__tarjeta__textos__precio">$2.000,00</p>
+                            <a href="#" class="productos__seccion_tarjetas__tarjeta__textos__link">Ver todos</a>
+                        </div>
+                    </div>
+
+                </div>
+                
+            </div>
         </section>
         
-        <section class="nosotros">
-            <div class="cabecera__logo">
-                <div class="cabecera__logo__imagen">
+        <section class="contenedor nosotros">
+            <div class="nosotros__logo">
+                <div class="nosotros__logo__imagen">
                     <img src="./assets/img/logo_fondo_transparente.png" alt="Logo Mailu" srcset="">
                 </div>
-                <span class="cabecera__logo__texto">Mailu Pastelería Artesanal</span>    
+                <span class="nosotros__logo__texto">Mailu Pastelería Artesanal</span>    
             </div>
 
             <div class="nosotros__menu">
@@ -71,29 +142,39 @@
                         <li class="nosotros__menu_item"><a href="#"></a>Anúncie aquí</li>
                     </ul>
                 </nav>
-            </div>
+            </div>    
 
-            <div class="formcontacto fondo-semi-transparente contenedores aparecer" id="contacto" >
+        </section>
+
+        <section class="contenedor contacto">
+            <div class="formcontacto" id="contacto" >
                 <div  class="formcontacto__contacto">
-                    <div class="formcontacto--izquierda">
-                        <img class="formcontacto__img" src="assets/Contacto2.jpg">
-                    </div>
                     <div class="formcontacto__text">
                         <h2 class="formcontacto__titulo texto-centrado">Contacto</h2>
                         <p class="formcontacto__subtext">¿Quieres contactarme?</p>
-                        <p class="formcontacto__subtext texto-justificado">Complete el siguiente formulario y me pondré en contacto con usted lo antes posible. </p>
+                        <p class="formcontacto__subtext">Complete el siguiente formulario y me pondré en contacto con usted lo antes posible. </p>
                         <form class="formconctato__form" name="form" id="form">
                             <input class="formcontacto__input formconctato__elemento" type="text" name="nombre" id="nombre" placeholder="Nombre">
                             <input class="formcontacto__input formconctato__elemento" type="email" name="email" id="email" placeholder="E-mail">
                             <input class="formcontacto__input formconctato__elemento" type="text" name="asunto" id="asunto" placeholder="Asunto">
                             <textarea class="formcontacto__textarea formconctato__elemento" rows="5" cols="40" id="mensaje" name="mensaje" placeholder="Mensaje"></textarea>
                             <span class="formcontacto__obligatorio">Todos los datos son obligatorios.</span>
-                            <button type="submit" class="formcontacto__boton" id="botonEnviar">Enviar mensaje</button>
+                            <button type="submit" class="boton formcontacto__boton" id="botonEnviar">Enviar mensaje</button>
                         </form>
                     </div>
                 </div>
             </div>
         </section>
+
+        <div class="btn__home">
+            <span class="btn__home__span"><a href="#cabecera"><button class="btn_home_boton"><img src="assets/img/flecha_arriba.svg" alt="volver arriba"></button></a></span>
+        </div>
+
+        <dialog class="ventana" id="ventana-emergente">
+            <p class="ventana__mensaje" id="ventana__mensaje__id"></p>
+            <button id="ventana-emergente__boton" class="boton formcontacto__boton">Aceptar</button>
+        </dialog>
+
     </main>
 
     <footer class="footer">
@@ -107,5 +188,7 @@
     </footer>
 
 </body>
+
+<script src="/assets/js/validacion.js"></script>
 
 </html>

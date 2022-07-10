@@ -12,19 +12,38 @@
 html{
     scroll-behavior: smooth;
     font-stretch: condensed;
-    width: 98%;
     margin: auto;
-    
+    font-size: 15px;
 }
 
 body {
     box-sizing: border-box;
-    background-color: var(--color-rosa-claro);
+    /* width: 95%; */
+    /* background-color: var(--color-rosa-claro); */
     font-family: 'Montserrat', sans-serif;
-    margin: 0;
+    margin: 0 auto;
     padding: 0;
     line-height: 1;
     color: var(--color-negro);
+}
+
+.contenedor{
+    margin-top: 2rem;
+}
+
+.btn_home_boton{
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+    transition: 1s all;
+    z-index: 99;
+    border-radius: 100%;
+    border: none;
+    background-color: var(--color-rosa);
+    width: 2rem;
+    height: 2rem;
+    align-items: center;
+    cursor: pointer;
 }
 
 ol, ul,li {
@@ -33,7 +52,7 @@ ol, ul,li {
 
 a{
     text-decoration: none;
-    color: var(--color-de-link);
+    color: var(--color-negro);
 }
 
 .texto-centrado{
