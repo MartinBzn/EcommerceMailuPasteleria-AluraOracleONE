@@ -89,7 +89,10 @@ a{
     cursor: pointer;
 }
 
-/*Tablet*/
-@media screen and (min-width: 768px) {
-   
+/*Desktop*/
+@media screen and (min-width: 1024px) {
+    body{
+        max-width: 1200px;
+    }
 }
+

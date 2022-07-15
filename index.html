@@ -18,34 +18,12 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="./assets/img/logo_fondo_transparente.png" type="image/x-icon">
     <title>Mailu Pasteleria Artesanal</title>
 </head>
 <body>
-    <header>
-        <div class="cabecera" id="cabecera">
-            <a href="index.html">
-                <div class="cabecera__logo">
-                    <div class="cabecera__logo__imagen">
-                        <img src="./assets/img/logo_fondo_transparente.png" alt="Logo Mailu" srcset="">
-                    </div>
-                    <span class="cabecera__logo__texto">Mailu Pastelería Artesanal</span>    
-                </div>
-            </a>
-
-            <div class="cabecera__buscar">
-                <input type="text" name="cabecera-input-buscar" id="cabecera-input-buscar" class="cabecera__buscar__input" placeholder="Busquemos algo...">
-                <!-- <button class="cabecera__buscar__boton"><i class="fas fa-search"></i></button> -->
-                <input type="image" src="./assets/img/lupa.png" alt="boton lupa" class="cabecera__buscar__boton">
-            </div>
-
-           
-            <div class="cabecera__boton-inicio">
-                <input type="button" class="boton cabecera__boton-inicio__boton " value="LOGIN">
-            </div>
-
-        </div>
-    </header>
+    <header id="header"></header>
 
     <main>
         <section class="contenedor banner">
@@ -333,52 +311,10 @@
 
         </section>
 
-        <div class="contenedor institucional">
-        
-            <section class="contenedor nosotros">
-                <div class="nosotros__logo">
-                    <div class="nosotros__logo__imagen">
-                        <img src="./assets/img/logo_fondo_transparente.png" alt="Logo Mailu" srcset="">
-                    </div>
-                    <span class="nosotros__logo__texto">Mailu Pastelería Artesanal</span>    
-                </div>
-
-                <div class="nosotros__menu">
-                    <nav class="nosotros__menu__nav">
-                        <ul class="nosotros__menu__lista">
-                            <li class=" nosotros__menu_item"><a href="#" class="vinculo">Quienes somos</a></li>
-                            <li class=" nosotros__menu_item"><a href="#" class="vinculo">Politica de Privacidad</a></li>
-                            <li class=" nosotros__menu_item"><a href="#" class="vinculo">Programa de Fidelidad</a></li>
-                            <li class=" nosotros__menu_item"><a href="#" class="vinculo">Nuestras Tiendas</a></li>
-                            <li class=" nosotros__menu_item"><a href="#" class="vinculo">Quiero ser franquiciado</a></li>
-                            <li class=" nosotros__menu_item"><a href="#" class="vinculo">Anúncie aquí</a></li>
-                        </ul>
-                    </nav>
-                </div>    
-
-            </section>
-
-            <section class="contenedor contacto">
-                <div class="formcontacto" id="contacto" >
-                    <div  class="formcontacto__contacto">
-                        <div class="formcontacto__text">
-                            <h2 class="formcontacto__titulo texto-centrado">Contacto</h2>
-                            <p class="formcontacto__subtext">¿Quieres contactarme?</p>
-                            <p class="formcontacto__subtext">Complete el siguiente formulario y me pondré en contacto con usted lo antes posible. </p>
-                            <form class="formconctato__form" name="form" id="form">
-                                <input class="formcontacto__input formconctato__elemento" type="text" name="nombre" id="nombre" placeholder="Nombre">
-                                <input class="formcontacto__input formconctato__elemento" type="email" name="email" id="email" placeholder="E-mail">
-                                <input class="formcontacto__input formconctato__elemento" type="text" name="asunto" id="asunto" placeholder="Asunto">
-                                <textarea class="formcontacto__textarea formconctato__elemento" rows="5" cols="40" id="mensaje" name="mensaje" placeholder="Mensaje"></textarea>
-                                <span class="formcontacto__obligatorio">Todos los datos son obligatorios.</span>
-                                <button type="submit" class="boton formcontacto__boton" id="botonEnviar">Enviar mensaje</button>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-        </div>
+        <!-- <div class="contenedor institucional" >
+            <section class="contenedor nosotros" id="nosotros"></section>
+            <section class="contenedor contacto" id="contacto"></section>
+        </div> -->
 
         <div class="btn__home">
             <span class="btn__home__span"><a href="#cabecera"><button class="btn_home_boton"><img src="assets/img/flecha_arriba.svg" alt="volver arriba"></button></a></span>
@@ -391,18 +327,21 @@
 
     </main>
 
-    <footer class="footer">
-        <div class="footer__contenedor">
-            <a href="https://www.linkedin.com/in/mart%C3%ADn-alejandro-baz%C3%A1n-23711257" class="iconos"><img src="assets/img/linkedin-in-brands.svg" alt="" ></a>
-            <a href="https://github.com/MartinBzn/Encriptador-AluraOracleONE-Challenge1.git" class="iconos"><img src="assets/img/github-brands.svg" alt="" ></a>
-            <a href="mailto:martin.alejandro.bzn@gmail.com" class="iconos"><img src="assets/img/envelope-solid.svg" alt="" ></a>
-        </div>
+    <div class="contenedor institucional" >
+        <section class="contenedor nosotros" id="nosotros"></section>
+        <section class="contenedor contacto" id="contacto"></section>
+    </div>
 
-        <p class="footer__pie">&copy; 2022 - Martín Alejandro Bazán</p>
-    </footer>
+
+    <footer class="footer" id="footer"></footer>
+
+    <script src="./assets/js/html_header.js"></script>
+    <script src="./assets/js/html_contacto.js"></script>
+    <script src="./assets/js/html_nosotros.js"></script>
+    <script src="./assets/js/html_footer.js"></script>
+    <script src="./assets/js/validacion.js"></script>
 
 </body>
 
-<script src="./assets/js/validacion.js"></script>
 
 </html>

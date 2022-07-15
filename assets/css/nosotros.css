@@ -29,10 +29,8 @@
     
     color: var(--color-rosa);
     margin: auto 0 auto 0.25rem;
-    
     font-family: 'Dancing Script', cursive;
-    font-size: 1.5rem;
-    font-style: italic;
+    font-size: 2rem;
     text-shadow: 
         0.5px 0.5px 1px var(--color-negro),
         -0.5px -0.5px 1px var(--color-negro);
@@ -86,4 +84,17 @@
         height: 100%;
         justify-content: space-around;
     }
+}
+
+@media screen and (min-width:1024px) {
+
+    .nosotros{
+        flex-direction: row;
+    }
+    
+    .nosotros__logo__texto{
+        margin:0;
+        font-size: 2.5rem;
+    }
+        
 }
