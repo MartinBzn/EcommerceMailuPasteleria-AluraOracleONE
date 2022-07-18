@@ -1,0 +1,17 @@
+.cabecera__boton-inicio, .cabecera__boton-menu-admin{
+    display: none;   
+}
+
+.producto__seccion__titulo{
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.producto__seccion__titulo__titulo{
+    margin: 1rem .5rem;
+}
+
+.todos__boton-menu-admin{
+    margin: 0 .5rem;
+}
+

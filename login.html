@@ -6,6 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="./assets/css/style.css">
         <link rel="stylesheet" href="./assets/css/header.css">
+        <link rel="stylesheet" href="./assets/css/formularios.css">
         <link rel="stylesheet" href="./assets/css/login.css">
         <link rel="stylesheet" href="./assets/css/nosotros.css">
         <link rel="stylesheet" href="./assets/css/contacto.css">
@@ -27,11 +28,13 @@
 
         <main>
             <div class="formularioLogin">
-                <form action="" class="formularioLogin__form">
-                    <h3 class="formularioLogin__titulo">Iniciar Sesión</h3>
-                    <input type="email" class="formularioLogin__elemento" placeholder="Escriba su correo electrónico" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2, 4}$" required>
-                    <input type="password" class="formularioLogin__elemento" placeholder="Escriba su contraeña" required>
-                    <button type="submit" class="boton formularioLogin__boton">Entrar</button>
+                <form action="" class="formularios__form">
+                    <h3 class="formularios__titulo">Iniciar Sesión</h3>
+                    <label for="email" class="formularios__elemento__etiqueta formularios__elemento--ancho-maximo">Escriba su correo electrónico</label>
+                    <input type="email" class="formularios__elemento formularios__elemento--ancho-maximo" id="email" placeholder="Ejemplo: mailu@pasteleria.com" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2, 4}$" required>
+                    <label for="password" class="formularios__elemento__etiqueta formularios__elemento--ancho-maximo">Escriba su contraeña</label>
+                    <input type="password" class="formularios__elemento formularios__elemento--ancho-maximo" id="password" placeholder="Entre 4 y 8 caracteres" pattern="^.{4,8}$" title="La contraseña debe tener entre 4 y 8 caracteres" required>
+                    <button type="submit" class="boton formularios__boton formularios__elemento--ancho-maximo formularioLogin__boton">Entrar</button>
                 </form>
             </div>
         </main>

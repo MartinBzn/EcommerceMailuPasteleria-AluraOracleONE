@@ -73,7 +73,7 @@
 @media screen and (min-width:1024px) {
     
     .banner__imagen{
-        height: 30rem;
+        height: 25rem;
         justify-content: flex-end;
         padding-bottom: 2rem;
     }

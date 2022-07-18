@@ -22,5 +22,11 @@ header.innerHTML =
                         <input type="button" class="boton cabecera__boton-inicio__boton " value="LOGIN">
                     </a>
                 </div>
+
+                <div class="cabecera__boton-menu-admin">
+                    <a href="./menu-admin.html">
+                        <input type="button" class="boton cabecera__boton-inicio__boton " value="Menú Admistrador">
+                    </a>
+                </div>
     
             </div>`

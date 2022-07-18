@@ -6,9 +6,10 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="./assets/css/style.css">
         <link rel="stylesheet" href="./assets/css/header.css">
+        <link rel="stylesheet" href="./assets/css/formularios.css">
         <link rel="stylesheet" href="./assets/css/productos.css">
         <link rel="stylesheet" href="./assets/css/nosotros.css">
-        <link rel="stylesheet" href="./assets/css/contacto.css">
+        <!-- <link rel="stylesheet" href="./assets/css/contacto.css"> -->
         <link rel="stylesheet" href="./assets/css/institucional.css">
         <link rel="stylesheet" href="./assets/css/ventana_emergente.css">
         <link rel="stylesheet" href="./assets/css/footer.css">
@@ -18,7 +19,7 @@
         <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
         <link rel="shortcut icon" href="./assets/img/logo_fondo_transparente.png" type="image/x-icon">
-        <title>Mailu Pasteleria Artesanal - Login</title>
+        <title>Mailu Pasteleria Artesanal - Productos</title>
     </head>
 
     <body>
@@ -27,14 +28,24 @@
 
         <main>
             <div class="formularioProductos">
-                <form action="" class="formularioProductos__form">
-                    <h3 class="formularioProductos__titulo">Iniciar Sesión</h3>
-                    <input type="image" class="formularioProductos__elemento" placeholder="URL Imagen" required>
-                    <input type="text" class="formularioProductos__elemento" placeholder="Categoría" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2, 4}$" required>
-                    <input type="text" class="formularioProductos__elemento" placeholder="Nombre del Producto" required>
-                    <input type="number" class="formularioProductos__elemento" placeholder="Precio" required>
-                    <textarea class="formProductos__textarea formProductos__elemento" rows="5" cols="40" id="mensaje" name="mensaje" placeholder="Mensaje"></textarea>
-                    <button type="submit" class="boton formularioProductos__boton">Enviar</button>
+                <form action="" class="formularios__form">
+                    <h3 class="formularios__titulo">Agregar Nuevo Producto</h3>
+                    <label for="urlimagen" class="formularios__elemento__etiqueta formularios__elemento--ancho-maximo">URL Imagen</label>
+                    <input type="text" name="urlimagen" class="formularios__elemento formularios__elemento--ancho-maximo" required>
+                    <label for="categoria" class="formularios__elemento__etiqueta formularios__elemento--ancho-maximo">Categoría</label>
+                    <select class="formularios__elemento formularios__elemento--ancho-maximo" id="categoria" required>                    
+                        <option class="formularios__opciones" value="sincategoria">Sin categoría</option>
+                        <option class="formularios__opciones" value="clasicos">Clásicos</option>
+                        <option class="formularios__opciones" value="tematicas">Temáticas</option>
+                        <option class="formularios__opciones" value="tentaciones">Tentaciones</option>
+                    </select>
+                    <label for="nom-producto" class="formularios__elemento__etiqueta formularios__elemento--ancho-maximo formularios__elemento--ancho-maximo">Nombre del Producto</label>
+                    <input type="text" class="formularios__elemento formularios__elemento--ancho-maximo" id="nom-producto" required>
+                    <label for="precio" class="formularios__elemento__etiqueta formularios__elemento--ancho-maximo">Precio</label>
+                    <input type="number" class="formularios__elemento formularios__elemento-numerico formularios__elemento--ancho-maximo" id="precio" inputmode="numeric" step="any" min="0" value="0" required>
+                    <label for="descripcion" class="formularios__elemento__etiqueta formularios__elemento--ancho-maximo">Descripción del Producto</label>
+                    <textarea class="formularios__elemento formularios__textarea formularios__elemento--ancho-maximo" rows="5" cols="40" id="descripcion" name="descripcion"></textarea>
+                    <button type="submit" class="boton formularios__boton formularios__elemento--ancho-maximo">Agregar Nuevo Producto</button>
                 </form>
             </div>
         </main>

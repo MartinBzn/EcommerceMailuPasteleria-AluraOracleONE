@@ -12,7 +12,8 @@
 }
 
 .productos__seccion__tarjetas__tarjeta:hover{
-    box-shadow: 0 15px 30px rgba(0,0,0,0.3);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.5);
+    background-color: var(--color-blanco-oscuro);
 	transform: translateY(-10px);
 }
 
@@ -27,7 +28,7 @@
 }
 
 .productos__seccion__tarjetas__tarjeta__imagen img{
-    height: 100%;  
+    width: 100%;  
 }
 
 .productos__seccion__tarjetas__tarjeta__textos{
