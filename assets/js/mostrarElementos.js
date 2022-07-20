@@ -2,14 +2,14 @@ const crearNuevaTarjeta = (nombre, precio,imagen) => {
     const tarjeta = document.createElement("div")
     tarjeta.classList.add("productos__seccion__tarjetas__tarjeta");
     const contenido = `
-    <div class="productos__seccion__tarjetas__tarjeta__imagen">
-        <img src="${imagen}" alt="">
-    </div>
-    <div class="productos__seccion__tarjetas__tarjeta__textos">
-        <h4 class="productos__seccion__tarjetas__tarjeta__textos__nombre">${nombre}</h4>
-        <p class="productos__seccion__tarjetas__tarjeta__textos__precio">${precio}</p>
-        <a href="#" class="vinculo productos__seccion_tarjetas__tarjeta__textos__link">Ver todos</a>
-    </div>`
+        <div class="productos__seccion__tarjetas__tarjeta__imagen">
+            <img src="${imagen}" alt="">
+        </div>
+        <div class="productos__seccion__tarjetas__tarjeta__textos">
+            <h4 class="productos__seccion__tarjetas__tarjeta__textos__nombre">${nombre}</h4>
+            <p class="productos__seccion__tarjetas__tarjeta__textos__precio">${precio}</p>
+            <a href="#" class="vinculo productos__seccion_tarjetas__tarjeta__textos__link">Ver todos</a>
+        </div>`
     tarjeta.innerHTML = contenido;
     return tarjeta;
 };

@@ -4,7 +4,7 @@
         "nombre": "Rogel",
         "precio": 2000,
         "categoria":"Clásicos",
-        "img":"http://127.0.0.1:5500/assets/img/Productos/Rogel2.png",
+        "img":"https://martinbzn.github.io/EcommerceMailuPasteleria-AluraOracleONE/assets/img/Productos/Futbol.JPG",
         "id": 1
       },
       {
