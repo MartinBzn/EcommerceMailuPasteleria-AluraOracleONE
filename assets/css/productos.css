@@ -5,3 +5,7 @@
 .cabecera__boton-inicio{
     display: none;   
 }
+
+.agregarProducto_form__titulo{
+    margin: 2rem auto;
+}

@@ -1,39 +1,156 @@
 {
-    "productos": [
-      {
-        "nombre": "Rogel",
-        "precio": 2000,
-        "categoria":"Clásicos",
-        "img":"https://martinbzn.github.io/EcommerceMailuPasteleria-AluraOracleONE/assets/img/Productos/Futbol.JPG",
-        "id": 1
-      },
-      {
-        "nombre": "Selva Negra",
-        "precio": 5000,
-        "categoria":"Clásicos",
-        "img":"http://127.0.0.1:5500/assets/img/Productos/Rogel2.png",
-        "id":2
-      },
-      {
-        "nombre": "Balcarce",
-        "precio": 6000,
-        "categoria":"Clásicos",
-        "img":"http://127.0.0.1:5500/assets/img/Productos/Rogel2.png",
-        "id": 3
-      },
-      {
-        "nombre": "Molino",
-        "precio": 6000,
-        "categoria":"Clásicos",
-        "img":"http://127.0.0.1:5500/assets/img/Productos/Rogel2.png",
-        "id": 4
-      },
-      {
-        "nombre": "Fraisier",
-        "precio": 2000,
-        "categoria":"Clásicos",
-        "img":"http://127.0.0.1:5500/assets/img/Productos/Rogel2.png",
-        "id": 5
-      }
-    ]
+  "productos": [
+    {
+      "nombre": "Rogel",
+      "precio": 2000,
+      "categoria": "Clásicos",
+      "img": "assets/img/Productos/Rogel2.png",
+      "id": "924f04a7-427c-4ec3-bc9b-65d08a2cb1e2",
+      "descripcion": "El alfajor santafesino tipo torta, también conocido como rogel, es un pastel tradicional de Argentina que consta de sucesivas galletas neutras alternando con abundante dulce de leche y finalmente cubierto por una capa de merengue. Si bien los ingredientes básicos son idénticos al tradicional alfajor, la decoración corre por cuenta de los pasteleros."
+    },
+    {
+      "nombre": "Selva Negra",
+      "precio": 5000,
+      "categoria": "Clásicos",
+      "img": "assets/img/Productos/SelvaNegra.jpg",
+      "id": "daf1f35c-c89e-4396-b0e3-54d2500666c9",
+      "descripcion": "La tarta o torta Selva Negra (en alemán, Schwarzwälder Kirschtorte) es una tarta típica de la cocina de Baden y uno de los dulces más característicos de la gastronomía alemana. Está compuesta por varias capas de bizcochuelo de chocolate embebido en kirsch e intercaladas con nata y cerezas. Está recubierta de crema chantillí, virutas de chocolate y cerezas."
+    },
+    {
+      "nombre": "Balcarce",
+      "precio": 6000,
+      "categoria": "Clásicos",
+      "img": "assets/img/Productos/Balcarce.jpg",
+      "id": "e6693380-4c51-4c16-a5d6-1a4cc0197139",
+      "descripcion": "Bizcocho con crema de leche, vainilla, merengue y dulce de leche, también se le coloca en la superficie ralladura de coco."
+    },
+    {
+      "nombre": "Molino",
+      "precio": 6000,
+      "categoria": "Clásicos",
+      "img": "assets/img/Productos/Molino.jpg",
+      "id": "e2044f9b-2c82-4ee8-b524-39687ea8334c",
+      "descripcion": "Bizcochuelo de chocolate, con mousse de chocolate y crema chantilly. Cubierto de virutas de chocolates, con triangulos de chocolate en forma de aspas que el da su nombre."
+    },
+    {
+      "nombre": "Fraisier",
+      "precio": 2000,
+      "categoria": "Clásicos",
+      "img": "assets/img/Productos/Fraisier.jpg",
+      "id": "1c3f53fb-2e52-48c1-a0be-dcc05023cb3d",
+      "descripcion": "La tarta de fresas es una de las tartas clásicas de fruta que se hace de muchas formas y cuya capa superior está hecha normalmente de manzanas. Es un postre muy común en toda Europa."
+    },
+    {
+      "nombre": "Charlotte",
+      "precio": 8000,
+      "categoria": "Clásicos",
+      "img": "assets/img/Productos/Charlotte.jpg",
+      "id": "913bfc60-0a70-48a3-b2ec-1245dc8afede",
+      "descripcion": "La carlota (del francés charlotte), es una tarta de origen francés que se caracteriza por ser elaborada con una base de bizcocho o galleta, que no requiere de horneado y se sirve frío. Se elabora forrando los bordes y la base de un molde alto con bizcochos de soletilla, láminas de bizcocho, genovesas o distintos tipos de galleta. El postre puede elaborarse con rellenos variados como cremas, helados, mermeladas, compota de frutas o jaleas."
+    },
+    {
+      "nombre": "Fútbol",
+      "precio": 7000,
+      "categoria": "Tématicas",
+      "img": "assets/img/Productos/futbol.jpg",
+      "id": "9902d6bd-3182-4fd9-b16f-7b36fffc7c0e",
+      "descripcion": "Bizcochuelo y rellenos a eleccion. La decoracion es ilustrativa, se puede agregar o sacar elementos. El precio publicado es orientativo, variará segun gustos y decoraciones elegidas."
+    },
+    {
+      "nombre": "Unicornio",
+      "precio": 5000,
+      "categoria": "Tématicas",
+      "img": "assets/img/Productos/unicornio.png",
+      "id": "db724963-e5ce-45c8-a50b-8b826dabe906",
+      "descripcion": "Bizcochuelo y rellenos a eleccion. La decoracion es ilustrativa, se puede agregar o sacar elementos. El precio publicado es orientativo, variará segun gustos y decoraciones elegidas."
+    },
+    {
+      "nombre": "Personajes",
+      "precio": 5000,
+      "categoria": "Tématicas",
+      "img": "assets/img/Productos/personajes.jpg",
+      "id": "02a7269c-6c48-4da4-aa1f-68e9cc22fe8b",
+      "descripcion": "Bizcochuelo y rellenos a eleccion. La decoracion es ilustrativa, se puede agregar o sacar elementos. El precio publicado es orientativo, variará segun gustos y decoraciones elegidas."
+    },
+    {
+      "nombre": "Casamiento",
+      "precio": 20000,
+      "categoria": "Tématicas",
+      "img": "assets/img/Productos/Casamiento.png",
+      "id": "9c1748ea-802c-4f94-b52d-652bcb45eec2",
+      "descripcion": "Bizcochuelo y rellenos a eleccion. La decoracion es ilustrativa, se puede agregar o sacar elementos. El precio publicado es orientativo, variará segun gustos y decoraciones elegidas."
+    },
+    {
+      "nombre": "Decoradas",
+      "precio": 7000,
+      "categoria": "Tématicas",
+      "img": "assets/img/Productos/Varios.jpg",
+      "id": "85f95616-b9fc-4baf-91b0-ee9860be09ef",
+      "descripcion": "Bizcochuelo y rellenos a eleccion. La decoracion es ilustrativa, se puede agregar o sacar elementos. El precio publicado es orientativo, variará segun gustos y decoraciones elegidas."
+    },
+    {
+      "nombre": "Adultos",
+      "precio": 7000,
+      "categoria": "Tématicas",
+      "img": "assets/img/Productos/Adultos.png",
+      "id": "4ef8d112-39b1-4c76-bc88-54800a46f3aa",
+      "descripcion": "Bizcochuelo y rellenos a eleccion. La decoracion es ilustrativa, se puede agregar o sacar elementos. El precio publicado es orientativo, variará segun gustos y decoraciones elegidas."
+    },
+    {
+      "nombre": "Brownie",
+      "precio": 3000,
+      "categoria": "Tentaciones",
+      "img": "assets/img/Productos/Brownie.jpg",
+      "id": "ae8766a8-0cc0-43da-92da-57a148b8f754",
+      "descripcion": "Un brownie es un bizcocho de chocolate pequeño, típico de la gastronomía de Estados Unidos. Se llama así por su color marrón oscuro, o brown en inglés. A veces se cubre con jarabe espeso de chocolate y puede llevar dentro trocitos de nueces, chocolate butterscotch (una especie de toffee crujiente) o mantequilla de maní."
+    },
+    {
+      "nombre": "Cheesecake",
+      "precio": 2500,
+      "categoria": "Tentaciones",
+      "img": "assets/img/Productos/Cheesecake.png",
+      "id": "2d75d267-cdeb-4faf-94c2-496cc9a0eabe",
+      "descripcion": "Un pastel de queso o tarta de queso (véase otros nombres) es un postre muy popular desde el siglo XX hecho a base de ricota, requesón, queso quark, azúcar y algunas veces otros ingredientes, tales como: huevos, crema de leche o nata, harina, patata, almendras o frutas (limones o naranjas, etc.). También pueden agregarse ciertos saborizantes, tales como mermelada, chocolate o whisky."
+    },
+    {
+      "nombre": "Lemon Pie",
+      "precio": 2500,
+      "categoria": "Tentaciones",
+      "img": "assets/img/Productos/Lemon Pie.jpg",
+      "id": "40652674-9f83-4725-86ca-c6f20c9e8406",
+      "descripcion": "La tarta de limón es una tarta formada por una base de masa quebrada u hojaldre que se rellena con crema de limón. Esta tarta a menudo se complementa con un merengue, lo que resulta en tarta de limón con merengue."
+    },
+    {
+      "nombre": "Marquise",
+      "precio": 4000,
+      "categoria": "Tentaciones",
+      "img": "assets/img/Productos/Marquise.jpg",
+      "id": "c5af2429-a02e-47ac-bdbd-f1a5ff2f8529",
+      "descripcion": "La Marquise de chocolate es un rico postre de chocolate elaborado con chocolate amargo, mantequilla, azúcar, cacao en polvo, huevos y nata. Se puede aromatizar con vainilla y espresso."
+    },
+    {
+      "nombre": "Pastafrola",
+      "precio": 2000,
+      "categoria": "Tentaciones",
+      "img": "assets/img/Productos/Pastafrola.jpeg",
+      "id": "a1223071-c3a7-4781-96d5-f4169face887",
+      "descripcion": "Pastafrola es una tarta artesanal típica de la gastronomía de Argentina, Paraguay y Uruguay. Se compone de una masa cubierta originalmente con dulce de batata, membrillo o dulce de leche. Es adornada con tiras delgadas de la misma masa, dando forma de cuadriculado romboidal sobre la capa de dulce."
+    },
+    {
+      "nombre": "Havanet",
+      "precio": 4000,
+      "categoria": "Tentaciones",
+      "img": "assets/img/Productos/Tarta-Chocolate.png",
+      "id": "d8b2271f-67b5-4dbd-afba-0ce72dbba774",
+      "descripcion": "Havanet es una tarta muy sencilla de hacer y es un postre ideal. Tiene una masa crocante a base de manteca, centro de dulce de leche y cobertura de chocolate."
+    },
+    {
+      "nombre": "choco",
+      "id": "2ed0c4c7-9155-4b97-8b01-9ad9df5cb186"
+    },
+    {
+      "nombre": "Marmolada",
+      "id": "fce44a92-019f-410e-a2d2-2774551b6ae6"
+    }
+  ]
 }

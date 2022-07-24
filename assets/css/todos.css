@@ -11,7 +11,44 @@
     margin: 1rem .5rem;
 }
 
+.productos__seccion__tarjetas__tarjeta__textos__titulos{
+    display: flex;
+    justify-content: space-between;
+}
+
+.productos__seccion__tarjetas__tarjeta__textos__nombre{
+    display: inline-block;
+}
+
+.productos__seccion__tarjetas__tarjeta__textos__iconos{
+    display: flex;
+    justify-content: space-around;
+    width: 3.5rem;
+    align-items: center;
+    
+}
+
+.productos__seccion__tarjetas__tarjeta__textos__iconos img{
+    width: 1rem;
+    opacity: 35%;
+    transition: all .3s linear;
+}
+
+.productos__seccion__tarjetas__tarjeta__textos__iconos img:hover{
+    opacity: 100%;
+}
+
 .todos__boton-menu-admin{
     margin: 0 .5rem;
+}
+
+@media screen and (min-width:768px) {
+    .producto__seccion__titulo{
+        flex-direction: row;
+        align-items: flex-start;
+    }   
+    .todos__boton-menu-admin{
+        margin: auto .5rem;
+    }
 }
 

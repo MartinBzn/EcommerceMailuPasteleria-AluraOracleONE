@@ -40,6 +40,11 @@
     transition: .3s all;
 }
 
+.formularios__elemento::placeholder{
+    color: var(--color-rosa);
+    font-style: italic;
+}
+
 .formularios__elemento--ancho-maximo{
     max-width: 25rem;
 }
