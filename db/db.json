@@ -1,12 +1,12 @@
 {
   "productos": [
     {
-      "nombre": "Rogel",
-      "precio": 2000,
-      "categoria": "Clásicos",
       "img": "assets/img/Productos/Rogel2.png",
-      "id": "924f04a7-427c-4ec3-bc9b-65d08a2cb1e2",
-      "descripcion": "El alfajor santafesino tipo torta, también conocido como rogel, es un pastel tradicional de Argentina que consta de sucesivas galletas neutras alternando con abundante dulce de leche y finalmente cubierto por una capa de merengue. Si bien los ingredientes básicos son idénticos al tradicional alfajor, la decoración corre por cuenta de los pasteleros."
+      "categoria": "Clásicos",
+      "nombre": "Rogel",
+      "precio": "4000",
+      "descripcion": "El alfajor santafesino tipo torta, también conocido como rogel, es un pastel tradicional de Argentina que consta de sucesivas galletas neutras alternando con abundante dulce de leche y finalmente cubierto por una capa de merengue. Si bien los ingredientes básicos son idénticos al tradicional alfajor, la decoración corre por cuenta de los pasteleros.",
+      "id": "924f04a7-427c-4ec3-bc9b-65d08a2cb1e2"
     },
     {
       "nombre": "Selva Negra",
@@ -51,7 +51,7 @@
     {
       "nombre": "Fútbol",
       "precio": 7000,
-      "categoria": "Tématicas",
+      "categoria": "Temáticas",
       "img": "assets/img/Productos/futbol.jpg",
       "id": "9902d6bd-3182-4fd9-b16f-7b36fffc7c0e",
       "descripcion": "Bizcochuelo y rellenos a eleccion. La decoracion es ilustrativa, se puede agregar o sacar elementos. El precio publicado es orientativo, variará segun gustos y decoraciones elegidas."
@@ -59,7 +59,7 @@
     {
       "nombre": "Unicornio",
       "precio": 5000,
-      "categoria": "Tématicas",
+      "categoria": "Temáticas",
       "img": "assets/img/Productos/unicornio.png",
       "id": "db724963-e5ce-45c8-a50b-8b826dabe906",
       "descripcion": "Bizcochuelo y rellenos a eleccion. La decoracion es ilustrativa, se puede agregar o sacar elementos. El precio publicado es orientativo, variará segun gustos y decoraciones elegidas."
@@ -67,7 +67,7 @@
     {
       "nombre": "Personajes",
       "precio": 5000,
-      "categoria": "Tématicas",
+      "categoria": "Temáticas",
       "img": "assets/img/Productos/personajes.jpg",
       "id": "02a7269c-6c48-4da4-aa1f-68e9cc22fe8b",
       "descripcion": "Bizcochuelo y rellenos a eleccion. La decoracion es ilustrativa, se puede agregar o sacar elementos. El precio publicado es orientativo, variará segun gustos y decoraciones elegidas."
@@ -75,7 +75,7 @@
     {
       "nombre": "Casamiento",
       "precio": 20000,
-      "categoria": "Tématicas",
+      "categoria": "Temáticas",
       "img": "assets/img/Productos/Casamiento.png",
       "id": "9c1748ea-802c-4f94-b52d-652bcb45eec2",
       "descripcion": "Bizcochuelo y rellenos a eleccion. La decoracion es ilustrativa, se puede agregar o sacar elementos. El precio publicado es orientativo, variará segun gustos y decoraciones elegidas."
@@ -83,7 +83,7 @@
     {
       "nombre": "Decoradas",
       "precio": 7000,
-      "categoria": "Tématicas",
+      "categoria": "Temáticas",
       "img": "assets/img/Productos/Varios.jpg",
       "id": "85f95616-b9fc-4baf-91b0-ee9860be09ef",
       "descripcion": "Bizcochuelo y rellenos a eleccion. La decoracion es ilustrativa, se puede agregar o sacar elementos. El precio publicado es orientativo, variará segun gustos y decoraciones elegidas."
@@ -91,7 +91,7 @@
     {
       "nombre": "Adultos",
       "precio": 7000,
-      "categoria": "Tématicas",
+      "categoria": "Temáticas",
       "img": "assets/img/Productos/Adultos.png",
       "id": "4ef8d112-39b1-4c76-bc88-54800a46f3aa",
       "descripcion": "Bizcochuelo y rellenos a eleccion. La decoracion es ilustrativa, se puede agregar o sacar elementos. El precio publicado es orientativo, variará segun gustos y decoraciones elegidas."
@@ -145,12 +145,12 @@
       "descripcion": "Havanet es una tarta muy sencilla de hacer y es un postre ideal. Tiene una masa crocante a base de manteca, centro de dulce de leche y cobertura de chocolate."
     },
     {
-      "nombre": "choco",
-      "id": "2ed0c4c7-9155-4b97-8b01-9ad9df5cb186"
-    },
-    {
-      "nombre": "Marmolada",
-      "id": "fce44a92-019f-410e-a2d2-2774551b6ae6"
+      "img": "assets/img/Productos/Rogel2.png",
+      "categoria": "Clásicos",
+      "nombre": "Bizcochuelo Matero",
+      "precio": "7007",
+      "descripcion": "7777",
+      "id": "8ac60e13-435e-4751-a95e-235cc7ef65b4"
     }
   ]
 }

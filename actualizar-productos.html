@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./assets/css/style.css">
+        <link rel="stylesheet" href="./assets/css/header.css">
+        <link rel="stylesheet" href="./assets/css/formularios.css">
+        <link rel="stylesheet" href="./assets/css/productos.css">
+        <link rel="stylesheet" href="./assets/css/nosotros.css">
+        <!-- <link rel="stylesheet" href="./assets/css/contacto.css"> -->
+        <link rel="stylesheet" href="./assets/css/institucional.css">
+        <link rel="stylesheet" href="./assets/css/ventana_emergente.css">
+        <link rel="stylesheet" href="./assets/css/footer.css">
+        <script src="https://kit.fontawesome.com/b1e1a24514.js" crossorigin="anonymous"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
+        <link rel="shortcut icon" href="./assets/img/logo_fondo_transparente.png" type="image/x-icon">
+        <title>Mailu Pasteleria Artesanal - Productos</title>
+    </head>
+
+    <body>
+
+        <header id="header"></header>
+
+        <main>
+            <div class="formularioProductos">
+                <form action="" class="formularios__form" data-form>
+                    <h3 class="formularios__titulo agregarProducto_form__titulo">Agregar Nuevo Producto</h3>
+                    <label for="urlimagen" class="formularios__elemento__etiqueta formularios__elemento--ancho-maximo">URL Imagen</label>
+                    <input type="text" name="urlimagen" class="formularios__elemento formularios__elemento--ancho-maximo" id="urlimagen">
+                    <label for="categoria" class="formularios__elemento__etiqueta formularios__elemento--ancho-maximo">Categoría</label>
+                    <select class="formularios__elemento formularios__elemento--ancho-maximo" id="categoria" required>                    
+                        <option class="formularios__opciones" value="sincategoria">Sin categoría</option>
+                        <option class="formularios__opciones" value="clasicos" >Clásicos</option>
+                        <option class="formularios__opciones" value="tematicas">Temáticas</option>
+                        <option class="formularios__opciones" value="tentaciones"selected>Tentaciones</option>
+                    </select>
+                    <label for="nom-producto" class="formularios__elemento__etiqueta formularios__elemento--ancho-maximo formularios__elemento--ancho-maximo">Nombre del Producto</label>
+                    <input type="text" class="formularios__elemento formularios__elemento--ancho-maximo" id="nom-producto" required>
+                    <label for="precio" class="formularios__elemento__etiqueta formularios__elemento--ancho-maximo">Precio (sistema americano)</label>
+                    <input type="number" class="formularios__elemento formularios__elemento-numerico formularios__elemento--ancho-maximo" id="precio" inputmode="numeric" step="any" min="0" placeholder="Ejemplo: 1,234.56" required>
+                    <label for="descripcion" class="formularios__elemento__etiqueta formularios__elemento--ancho-maximo">Descripción del Producto</label>
+                    <textarea class="formularios__elemento formularios__textarea formularios__elemento--ancho-maximo" rows="5" cols="40" id="descripcion" name="descripcion"></textarea>
+                    <button type="submit" class="boton formularios__boton formularios__elemento--ancho-maximo">Editar Producto</button>
+                </form>
+            </div>
+        </main>
+
+        <div class="contenedor institucional" >
+            <section class="contenedor nosotros" id="nosotros"></section>
+            <section class="contenedor contacto" id="contacto"></section>
+        </div>
+
+        <dialog class="ventana" id="ventana-emergente">
+            <p class="ventana__mensaje" id="ventana__mensaje__id" data-mensaje_texto></p>
+            <button id="ventana-emergente__boton-aceptar" class="boton formcontacto__boton" data-boton_aceptar>Aceptar</button>
+            <button id="ventana-emergente__boton-cancelar" class="boton formcontacto__boton" data-boton_cancelar>Cancelar</button>
+        </dialog>
+    
+    
+        <footer class="footer" id="footer"></footer>
+    
+        <script src="./assets/js/html_header.js"></script>
+        <script src="./assets/js/html_contacto.js"></script>
+        <script src="./assets/js/html_nosotros.js"></script>
+        <script src="./assets/js/html_footer.js"></script>
+        <script src="./assets/js/validacion.js"></script>        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/uuid/8.3.2/uuid.min.js" integrity="sha512-UNM1njAgOFUa74Z0bADwAq8gbTcqZC8Ej4xPSzpnh0l6KMevwvkBvbldF9uR++qKeJ+MOZHRjV1HZjoRvjDfNQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script type="module" src="./controllers/actualizar-producto.controller.js"></script>
+    </body>
+
+</html>

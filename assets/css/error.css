@@ -1,10 +1,10 @@
 .mensaje{
-    border: 2px solid var(--color-celeste);
+    border: 2px solid red;
     border-radius: 2rem;
     width: 20rem;
     margin: 5rem auto;
     overflow: hidden;
-    background-color: var(--color-celeste-claro);
+    background-color: var(--color-rosa-claro);
 }
 
 .mensaje__imagen{
@@ -17,20 +17,19 @@
     height: 5rem;
     background-repeat: no-repeat;
     background-size: cover;
-    background-color: green;
+    background-color: red;
     border-radius: 50%;
 }
 
 .mensaje__texto{
     text-align: center;
-    color: var(--color-celeste);
+    color: var(--color-negro);
     margin: 1rem auto;
-    animation: cambia-color 3s linear infinite;
 }
 
 @keyframes cambia-color{
     0%{
-        color: var(--color-negro);
+        color: var(--color-celeste);
 
     }
     25%{
@@ -42,19 +41,13 @@
 
     }
     75%{
-        color: rgb(59, 59, 248);
+        color: var(--color-blanco-oscuro);
 
     }
     100%{
-        color: var(--color-negro);
+        color: var(--color-celeste);
 
     }
-}
-
-.mensaje__texto__subtitulo{
-    text-align: center;
-    color: var(--color-negro);
-    margin: 1rem auto;
 }
 
 .mensaje__boton{
