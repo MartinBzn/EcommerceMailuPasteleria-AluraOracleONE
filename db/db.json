@@ -4,7 +4,7 @@
       "img": "assets/img/Productos/Rogel2.png",
       "categoria": "Clásicos",
       "nombre": "Rogel",
-      "precio": "4000",
+      "precio": "5000",
       "descripcion": "El alfajor santafesino tipo torta, también conocido como rogel, es un pastel tradicional de Argentina que consta de sucesivas galletas neutras alternando con abundante dulce de leche y finalmente cubierto por una capa de merengue. Si bien los ingredientes básicos son idénticos al tradicional alfajor, la decoración corre por cuenta de los pasteleros.",
       "id": "924f04a7-427c-4ec3-bc9b-65d08a2cb1e2"
     },
@@ -148,7 +148,7 @@
       "img": "assets/img/Productos/Rogel2.png",
       "categoria": "Clásicos",
       "nombre": "Bizcochuelo Matero",
-      "precio": "7007",
+      "precio": "700",
       "descripcion": "7777",
       "id": "8ac60e13-435e-4751-a95e-235cc7ef65b4"
     }

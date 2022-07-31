@@ -2,34 +2,41 @@ import { productosServices } from "../service/productos-service.js";
 
 const formulario = document.querySelector("[data-form]");
 
-const obtenerInformacion = () => {
+const existeProducto = ( producto )=>{ return (producto.img && producto.opciones != 0 && producto.nombre && producto.precio && producto.descripcion)};
+
+const obtenerInformacion = async () => {
     const url = new URL(window.location);
     const id = url.searchParams.get("id");
-
     if( id == null){
         window.location.href = "/error.html";
     }
 
     const img = document.getElementById("urlimagen");
-    const categoria = document.getElementById("categoria");
     const opciones = document.getElementsByClassName("formularios__opciones");
     const nombre = document.getElementById("nom-producto");
     const precio = document.getElementById("precio");
     const descripcion = document.getElementById("descripcion");
 
-    productosServices.detalleProducto(id).then(producto => {
-        img.value = producto.img;
-        for(var i = 0; i < opciones.length; i++){
-            if(opciones[i].innerText == producto.categoria){
-                opciones[i].selected = true;
-            }else{
-                opciones[i].selected = false;
+    try{
+        const producto = await productosServices.detalleProducto(id);
+        if (existeProducto(producto)){
+            img.value = producto.img;
+            for(var i = 0; i < opciones.length; i++){
+                if(opciones[i].innerText == producto.categoria){
+                    opciones[i].selected = true;
+                }else{
+                    opciones[i].selected = false;
+                }
             }
-        }
-        nombre.value = producto.nombre;
-        precio.value = producto.precio;
-        descripcion.value = producto.descripcion;
-    });
+            nombre.value = producto.nombre;
+            precio.value = producto.precio;
+            descripcion.value = producto.descripcion;
+        }else{
+            throw new Error();
+        }        
+    }catch(error){
+        window.location.href = "/error.html";
+    };    
 };
 
 obtenerInformacion();
@@ -61,10 +68,13 @@ formulario.addEventListener("submit",(evento)=>{
     msj.innerHTML = `¿Esta seguro que desea editar el producto <strong>${nombre}</strong>?`
     ventana.showModal();
 
-    btnAceptar.addEventListener('click', () => {
+    btnAceptar.addEventListener('click', async () => {
         productosServices.actualizarProducto(img,opciones[opcion].innerText, nombre,precio,descripcion, id)
         .then(()=>{window.location.href = "/registro-editado.html"})
-        .catch(err => alert("Ocurrio un error."))
+        .catch(err => {
+            window.location.href = "/error.html";
+            console.log("Ocurrio un error. " + err)
+        });
         ventana.close();
     });
 

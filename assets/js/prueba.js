@@ -1,12 +1,16 @@
-/**
- * Demostrar uso de UUID v4 en Node JS
- * para generar un id único
- * 
- * @author parzibyte
-*/
-// Obtener módulo
-import uuidv4 from "uuid/v4";
+const cargarDatos = async ()=>{
+    const url = "https://api-pasteleria-mailu.herokuapp.com/api/productos";
+    console.log(url);
+    const res = await fetch(url,{
+        mode:'no-cors',
+        headers:{
+            "Content-Type": "application/json"
+        }
+    });
+    console.log("Mostrando RES", res);
+    const datos = res.json();
+    console.log("Mostrando Datos",datos); 
 
-// Y ahora lo llamamos como función
-let idUnico = uuidv4();
-console.log("El id único es: ", idUnico);
+}
+
+cargarDatos();

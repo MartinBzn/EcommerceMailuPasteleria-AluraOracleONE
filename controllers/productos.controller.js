@@ -41,8 +41,11 @@ const crearNuevaTarjeta = (nombre, precio, img, categoria,id) => {
 
         btnAceptar.addEventListener('click', () => {
             productosServices.eliminarProducto(id).then(respuesta => {
-                console.log(respuesta);
-            }).catch(err => alert("Ocurrio un error."))
+                location.reload();
+            }).catch(err => {
+                window.location.href = "/error.html";
+                console.log("Ocurrio un error. " + err)
+            });
             ventana.close();
         });
 
@@ -58,8 +61,12 @@ const seccionTarjetas = document.querySelector("[data-tarjetas]");
 
 productosServices
 .listaProductos().then((data) => {
-    data.forEach(producto => {
+    for(let clave in data){
+        let producto = data[clave];
         const nuevaTarjeta = crearNuevaTarjeta(producto.nombre,producto.precio,producto.img,producto.categoria,producto.id);
-        seccionTarjetas.appendChild(nuevaTarjeta);
-    });
-}).catch((error) => alert("Ocurrio un error."));
+        seccionTarjetas.appendChild(nuevaTarjeta);    
+    }
+}).catch(err => {
+    window.location.href = "/error.html";
+    console.log("Ocurrio un error. " + err)
+});

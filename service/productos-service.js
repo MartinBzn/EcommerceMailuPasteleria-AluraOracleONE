@@ -1,13 +1,21 @@
-const servidor = "http://localhost:3000/productos";
+const servidor = "https://productos-b618c-default-rtdb.firebaseio.com/productos";
 
-const listaProductos = () => fetch(servidor).then(respuesta => respuesta.json());
-// const listaProductos = () => fetch("https://api-pasteleria-mailu.herokuapp.com/api/productos",{mode:'no-cors'}).then(respuesta => respuesta.json());
+const listaProductos = async () =>{
+    const url = "https://productos-b618c-default-rtdb.firebaseio.com/productos.json";
+    const resp = await fetch(url,{
+        headers:{
+            "Content-Type": "application/json",
+        }
+    });
+    const data = await resp.json();
+    return data;
+}
 
-const crearProducto = (img, categoria, nombre, precio, descripcion) => {
+const crearProducto = async (img, categoria, nombre, precio, descripcion) => {
     if (img == ""){
         img = '../assets/img/img_no_encontrada_gris.png';
     }
-    return fetch(servidor,{
+    return fetch(servidor + `.json`,{
         method:"POST",
         headers:{
             "Content-Type":"application/json"
@@ -17,25 +25,56 @@ const crearProducto = (img, categoria, nombre, precio, descripcion) => {
 
 };
 
-const eliminarProducto = (id) => {
-    return fetch(servidor + `/${id}`,{method:"DELETE",});
+const eliminarProducto = async (id) => {
+    let registroID = await encontrarID(id);
+    return fetch(servidor + `/${registroID}.json`,{method:"DELETE",});
 };
 
-const detalleProducto = (id) => {
-    return fetch(servidor + `/${id}`).then(respuesta => respuesta.json());
+const encontrarID = async (id) => {
+    const url = "https://productos-b618c-default-rtdb.firebaseio.com/productos.json";   
+    const resp = await fetch(url,
+        {
+            headers:{
+                "Content-Type": "application/json",
+            }
+        }
+    ).then(res => res);
+    const data = await resp.json();
+    let registroID = "";
+    for (let clave in data){
+        if(data[clave].id == id){
+            registroID = clave;
+            break;
+        }
+    };
+    return registroID;
+}
+
+const detalleProducto = async (id) => {
+    let registroID = await encontrarID(id);
+    return fetch(servidor + `/${registroID}.json`).then(respuesta => respuesta.json());
 };
 
-const actualizarProducto = (img, categoria, nombre, precio, descripcion, id)=>{
-    console.log(img);
-    return fetch(servidor + `/${id}`,{
+const actualizarProducto = async (img, categoria, nombre, precio, descripcion, id)=>{
+    let registroID = await encontrarID(id);
+    const miObjeto = {
+        "categoria": categoria,
+        "descripcion": descripcion,
+        "id": id,
+        "img": img,
+        "nombre": nombre,
+        "precio": precio
+    };
+    const response = await fetch (servidor + `/${registroID}.json`,{
         method:"PUT",
         headers:{
             "Content-Type":"application/json"
         },
-        body:JSON.stringify({img, categoria, nombre, precio, descripcion})
-    })
-    .then(respuesta =>respuesta)
-    .catch(err => console.log(err));
+        body:(
+            JSON.stringify(miObjeto)
+        )
+    });
+    return await response.json();
 }
 
 export const productosServices = {
