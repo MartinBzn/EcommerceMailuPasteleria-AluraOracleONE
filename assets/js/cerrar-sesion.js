@@ -1,5 +1,5 @@
 const cerrarSesion = ()=>{
-    
+
     const ventana = document.getElementById("ventana-emergente")
     let msj = document.querySelector("[data-mensaje_texto]");
     const btnAceptar = document.querySelector("[data-boton_aceptar]");
@@ -15,9 +15,9 @@ const cerrarSesion = ()=>{
             }
             window.localStorage.setItem("usuarioLogueado",JSON.stringify(usuarioLogueado));
             botonesCabecera();
-            window.location.href = "/index.html";
+            window.location.href = "./index.html";
         }catch{
-            window.location.href = "/error.html";
+            window.location.href = "./error.html";
             console.log("Ocurrio un error. " + err)
         };
         ventana.close();
@@ -26,7 +26,7 @@ const cerrarSesion = ()=>{
 
     btnCancelar.addEventListener('click', () =>{
         ventana.close();
-        window.location.href="/todos.html";
+        window.location.href="./todos.html";
     });
 }
 
