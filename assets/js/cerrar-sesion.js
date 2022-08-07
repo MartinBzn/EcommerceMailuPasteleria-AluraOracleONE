@@ -21,7 +21,7 @@ const cerrarSesion = ()=>{
             console.log("Ocurrio un error. " + err)
         };
         ventana.close();
-        window.location.href="/todos.html";
+        window.location.href="./todos.html";
     });
 
     btnCancelar.addEventListener('click', () =>{
