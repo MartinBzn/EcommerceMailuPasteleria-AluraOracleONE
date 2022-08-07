@@ -13,7 +13,7 @@ const listaProductos = async () =>{
 
 const crearProducto = async (img, categoria, nombre, precio, descripcion) => {
     if (img == ""){
-        img = '../assets/img/img_no_encontrada_gris.png';
+        img = './assets/img/img_no_encontrada_gris.png';
     }
     return fetch(servidor + `.json`,{
         method:"POST",
