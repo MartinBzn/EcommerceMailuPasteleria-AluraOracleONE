@@ -10,9 +10,9 @@ formulario.addEventListener('submit',(evento) => {
     const precio = document.getElementById('precio').value;
     const descripcion = document.getElementById('descripcion').value;
     productosServices.crearProducto(img,categoria,nomProducto,precio,descripcion)
-    .then(()=>{window.location.href = "/registro-exitoso.html"})
+    .then(()=>{window.location.href = "./registro-exitoso.html"})
     .catch(err => {
-        window.location.href = "/error.html";
+        window.location.href = "./error.html";
         console.log("Ocurrio un error al tratar de agregar el producto. " + err)
     });
 })
