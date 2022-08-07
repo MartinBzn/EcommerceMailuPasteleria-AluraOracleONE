@@ -71,9 +71,9 @@ formulario.addEventListener("submit",(evento)=>{
 
     btnAceptar.addEventListener('click', async () => {
         productosServices.actualizarProducto(img,opciones[opcion].innerText, nombre,precio,descripcion, id)
-        .then(()=>{window.location.href = "/registro-editado.html"})
+        .then(()=>{window.location.href = "./registro-editado.html"})
         .catch(err => {
-            window.location.href = "/error.html";
+            window.location.href = "./error.html";
             console.log("Ocurrio un error al tratar de actualizar el registro. " + err)
         });
         ventana.close();
