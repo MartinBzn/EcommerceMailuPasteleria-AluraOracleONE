@@ -18,7 +18,7 @@ const crearNuevaTarjeta = (nombre, precio, img, categoria,id) => {
                 <h4 class="productos__seccion__tarjetas__tarjeta__textos__nombre">${nombre}</h4>
                 <div class="productos__seccion__tarjetas__tarjeta__textos__iconos">
                     <img title="Eliminar Producto"src="assets/img/Borrar.svg" alt="Borrar" data-eliminar id="${id}" name="${nombre}">
-                    <a href="actualizar-productos.html?id=${id}"><img title="Editar Producto" src="assets/img/Editar.svg" alt="Editar" data-editar></a>
+                    <a href="./actualizar-productos.html?id=${id}"><img title="Editar Producto" src="assets/img/Editar.svg" alt="Editar" data-editar></a>
                 </div>
             </div>
 
