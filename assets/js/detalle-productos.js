@@ -10,7 +10,7 @@ const crearNuevaTarjeta = (nombre, precio,imagen,id) => {
         <div class="productos__seccion__tarjetas__tarjeta__textos">
             <h4 class="productos__seccion__tarjetas__tarjeta__textos__nombre">${nombre}</h4>
             <p class="productos__seccion__tarjetas__tarjeta__textos__precio">${precio}</p>
-            <a href="../detalle-producto.html?id=${id}"><p class="productos__seccion__tarjetas__tarjeta__textos__acceso vinculo">Ver producto</p></a>
+            <a href="./detalle-producto.html?id=${id}"><p class="productos__seccion__tarjetas__tarjeta__textos__acceso vinculo">Ver producto</p></a>
         </div>`
     tarjeta.innerHTML = contenido;
     return tarjeta;
@@ -61,7 +61,7 @@ const obtenerInformacion = async () => {
     const url = new URL(window.location);
     const id = url.searchParams.get("id");
     if( id == null){
-        window.location.href = "/error.html";
+        window.location.href = "./error.html";
         console.log("No se encontro el ID");
     };
 
@@ -83,7 +83,7 @@ const obtenerInformacion = async () => {
             throw new Error();
         }        
     }catch(error){
-        window.location.href = "/error.html";
+        window.location.href = "./error.html";
     };
 };
 
