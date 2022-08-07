@@ -43,7 +43,7 @@ const crearNuevaTarjeta = (nombre, precio, img, categoria,id) => {
             productosServices.eliminarProducto(id).then(respuesta => {
                 location.reload();
             }).catch(err => {
-                window.location.href = "/error.html";
+                window.location.href = "./error.html";
                 console.log("Ocurrio un error. " + err)
             });
             ventana.close();
@@ -67,7 +67,7 @@ productosServices
         seccionTarjetas.appendChild(nuevaTarjeta);    
     }
 }).catch(err => {
-    window.location.href = "/error.html";
+    window.location.href = "./error.html";
     console.log("Ocurrio un error. " + err)
 });
 

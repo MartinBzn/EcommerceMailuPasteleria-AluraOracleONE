@@ -3,7 +3,7 @@ const btnAgregar = document.getElementById("btn-agregar");
 btnAgregar.addEventListener('click',()=>{
     const usuarioLogueado = usuarioEstaLogueado();
     if (usuarioLogueado[0]){
-        window.location.href="../agregar-productos.html"
+        window.location.href="./agregar-productos.html"
     }else{
         const ventana = document.getElementById("ventana-emergente")
         let msj = document.querySelector("[data-mensaje_texto]");
@@ -13,7 +13,7 @@ btnAgregar.addEventListener('click',()=>{
         ventana.showModal();
     
         btnAceptar.addEventListener('click', () => {
-            window.location.href="../login.html";
+            window.location.href="./login.html";
             ventana.close();
         });
     

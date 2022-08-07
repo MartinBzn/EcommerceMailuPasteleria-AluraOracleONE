@@ -87,13 +87,13 @@ botonesCabecera();
 
 spanUsuario.addEventListener('click',()=>{
     const url = window.location.href;
-    if (url.slice(-18) != "cerrar-sesion.html"){window.location.href="../cerrar-sesion.html";};
+    if (url.slice(-18) != "cerrar-sesion.html"){window.location.href="./cerrar-sesion.html";};
 })
 
 const textoBuscar = document.getElementById("cabecera-input-buscar");
 const botonBuscar = document.getElementById("cabecera-boton-buscar");
 botonBuscar.addEventListener('click',() =>{
     if(textoBuscar != ""){
-        window.location.href = `/filtrados.html?texto=${textoBuscar.value}` 
+        window.location.href = `./filtrados.html?texto=${textoBuscar.value}` 
     }
 });
