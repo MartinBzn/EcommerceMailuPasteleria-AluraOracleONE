@@ -13,6 +13,6 @@ formulario.addEventListener('submit',(evento) => {
     .then(()=>{window.location.href = "/registro-exitoso.html"})
     .catch(err => {
         window.location.href = "/error.html";
-        console.log("Ocurrio un error. " + err)
+        console.log("Ocurrio un error al tratar de agregar el producto. " + err)
     });
 })

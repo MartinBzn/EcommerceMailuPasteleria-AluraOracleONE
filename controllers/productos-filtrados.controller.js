@@ -1,5 +1,8 @@
 import { productosServices } from "../service/productos-service.js";
 
+const url = new URL(window.location);
+const texto = url.searchParams.get("texto");
+
 const crearNuevaTarjeta = (nombre, precio, img, categoria,id) => {
     
     if (img == "" || img == undefined){
@@ -61,16 +64,20 @@ const seccionTarjetas = document.querySelector("[data-tarjetas]");
 
 productosServices
 .listaProductos().then((data) => {
+    let encontro = false;
     for(let clave in data){
         let producto = data[clave];
-        const nuevaTarjeta = crearNuevaTarjeta(producto.nombre,producto.precio,producto.img,producto.categoria,producto.id);
-        seccionTarjetas.appendChild(nuevaTarjeta);    
+        let nombreProducto = producto.nombre.toLowerCase();
+        if(nombreProducto.includes(texto.toLowerCase())){
+            const nuevaTarjeta = crearNuevaTarjeta(producto.nombre,producto.precio,producto.img,producto.categoria,producto.id);
+            seccionTarjetas.appendChild(nuevaTarjeta);
+            encontro = true;    
+        }
     }
+    if(!encontro){
+        seccionTarjetas.innerHTML = `<p>No se encontraron productos con el contenido "${texto}"</p>`;
+    }    
 }).catch(err => {
     window.location.href = "/error.html";
-    console.log("Ocurrio un error. " + err)
+    alert("Ocurrio un error. " + err)
 });
-
-export const productosControllers = {
-    crearNuevaTarjeta,
-}

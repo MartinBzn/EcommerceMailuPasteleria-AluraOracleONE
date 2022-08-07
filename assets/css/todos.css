@@ -1,7 +1,3 @@
-.cabecera__boton-inicio, .cabecera__boton-menu-admin{
-    display: none;   
-}
-
 .producto__seccion__titulo{
     flex-direction: column;
     align-items: flex-start;

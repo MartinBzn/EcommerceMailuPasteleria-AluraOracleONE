@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="./assets/css/header.css">
+    <!-- <link rel="stylesheet" href="./assets/css/registro.css"> -->
     <link rel="stylesheet" href="./assets/css/productos_titulos.css">
     <link rel="stylesheet" href="./assets/css/productos_tarjetas.css">
     <link rel="stylesheet" href="./assets/css/todos.css">
@@ -34,11 +35,15 @@
                 <div class="producto__seccion__titulo">
 
                     <h3 class="producto__seccion__titulo__titulo">
-                        Todos los productos
+                        Resultado de la busqueda
                     </h3>
 
                     <div class="todos__boton-menu-admin">
-                        <input type="button" class="boton todos__boton " value="Agregar Producto" id="btn-agregar">
+
+                        <a href="./agregar-productos.html">
+                            <input type="button" class="boton todos__boton " value="Agregar Producto">
+                        </a>
+
                     </div>
 
                 </div>
@@ -52,12 +57,6 @@
         <div class="btn__home">
             <span class="btn__home__span"><a href="#cabecera"><button class="btn_home_boton"><img src="assets/img/flecha_arriba.svg" alt="volver arriba"></button></a></span>
         </div>
-
-        <dialog class="ventana" id="ventana-emergente">
-            <p class="ventana__mensaje" id="ventana__mensaje__id" data-mensaje_texto></p>
-            <button id="ventana-emergente__boton-aceptar" class="boton formcontacto__boton" data-boton_aceptar>Aceptar</button>
-            <button id="ventana-emergente__boton-cancelar" class="boton formcontacto__boton" data-boton_cancelar>Cancelar</button>
-        </dialog>
 
     </main>
 
@@ -74,8 +73,7 @@
     <script src="./assets/js/html_nosotros.js"></script>
     <script src="./assets/js/html_footer.js"></script>
     <script src="./assets/js/validacion.js"></script>
-    <script type="module" src="./controllers/productos.controller.js"></script>
-    <script src="./assets/js/autorizarCRUD.js"></script>
+    <script type="module" src="./controllers/productos-filtrados.controller.js"></script>
 
 </body>
 

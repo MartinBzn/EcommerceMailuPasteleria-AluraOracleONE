@@ -2,7 +2,8 @@
     display: grid;
     grid-template-areas:
         "logo logo"
-        "buscar btn-login";
+        "buscar btn-login"
+        "usuario usuario";
     padding-top: 0.5rem;
     justify-content: space-around;
     align-items: center;
@@ -13,6 +14,7 @@
 .cabecera a{
     width: 100%;
     grid-area: logo;
+    margin: auto;
 }
 
 .cabecera__logo{    
@@ -51,6 +53,17 @@
     font-size: .75rem;
 }
 
+.cabecera__boton-menu-admin{
+    width: 100%;
+    justify-content: center;
+}
+
+.cabecera__usuario{
+    grid-area: usuario;
+    text-align: right;
+    color: var(--color-celeste);
+}
+
 .cabecera__buscar{
     grid-area: buscar;
     display: flex;
@@ -81,10 +94,15 @@
     outline: none;
 }
 
+.elemento__invisible{
+    display: none;
+}
+
 @media screen and (min-width: 768px){
     .cabecera{
         grid-template-areas:
-        "logo buscar btn-login";
+        "logo buscar btn-login"
+        "vacio usuario usuario";
     }
 }
 
@@ -92,7 +110,8 @@
     .cabecera{
         width: 100%;
         grid-template-areas:
-        "buscar logo btn-login";
+        "buscar logo btn-login"
+        "vacio usuario usuario";
         grid-template-columns: 20% auto 20%;
     }
 
@@ -103,5 +122,10 @@
     .cabecera__boton-inicio__boton{
         margin-right: 2rem;
         font-size: 1rem;
+    }
+
+    .cabecera__usuario{
+        margin-right: 1rem;
+        font-size: 1.5rem;
     }
 }

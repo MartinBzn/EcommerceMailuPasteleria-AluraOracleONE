@@ -10,7 +10,7 @@ contacto.innerHTML =
                             <label for="nombre" class="formularios__elemento__etiqueta">Nombre</label>
                             <input class="formularios__elemento" type="text" name="nombre" id="nombre" required>
                             <label for="email" class="formularios__elemento__etiqueta">Email</label>
-                            <input class="formularios__elemento" type="email" name="email" id="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2, 4}$" required>
+                            <input class="formularios__elemento" type="email" name="email" id="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required>
                             <label for="asunto" class="formularios__elemento__etiqueta">Asunto</label>
                             <input class="formularios__elemento" type="text" name="asunto" id="asunto" required>
                             <label for="mensaje" class="formularios__elemento__etiqueta">Mensaje</label>

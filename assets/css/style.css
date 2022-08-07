@@ -67,6 +67,7 @@ a{
     text-decoration: underline;
     color:var(--color-marron);
     font-weight: bold;
+    cursor: pointer;
 }
 
 .texto-centrado{
@@ -94,11 +95,6 @@ a{
     cursor: pointer;
     
 }
-
-.cabecera__boton-menu-admin{
-    display: none;   
-}
-
 /*Desktop*/
 @media screen and (min-width: 1024px) {
     body{

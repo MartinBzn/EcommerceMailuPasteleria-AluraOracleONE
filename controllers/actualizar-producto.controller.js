@@ -36,6 +36,7 @@ const obtenerInformacion = async () => {
         }        
     }catch(error){
         window.location.href = "/error.html";
+        console.log("Ocurrio un error al trar de obtener la informacion." + error);
     };    
 };
 
@@ -73,7 +74,7 @@ formulario.addEventListener("submit",(evento)=>{
         .then(()=>{window.location.href = "/registro-editado.html"})
         .catch(err => {
             window.location.href = "/error.html";
-            console.log("Ocurrio un error. " + err)
+            console.log("Ocurrio un error al tratar de actualizar el registro. " + err)
         });
         ventana.close();
     });

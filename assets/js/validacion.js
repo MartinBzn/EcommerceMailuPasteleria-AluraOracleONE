@@ -57,7 +57,7 @@ function validarElemento(valor,campo){
 function validarEmail(valor){
 
     if(validarTamanioTexto(valor)){
-        if (/^[-\w.%+]{1,64}@(?:[A-Z0-9-]{1,63}\.){1,125}[A-Z]{2,63}$/i.test(valor)){
+        if (/^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/i.test(valor)){
             return "OK"
         }else{
             return "La direccion de email no es correcta";

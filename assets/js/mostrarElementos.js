@@ -33,7 +33,7 @@ const crearDivCategoria = (data, categoria) =>{
     const tituloCategoria = definirTitulo(categoria);
     seccion.innerHTML = 
     `<div class="producto__seccion__titulo">
-        <h3 class="producto__seccion__titulo__titulo">
+        <h3 class="producto__seccion__titulo__titulo" id="${categoria}">
             ${tituloCategoria}
         </h3>
         <div class="producto__seccion__titulo__link">
@@ -46,7 +46,6 @@ const crearDivCategoria = (data, categoria) =>{
     contenedorTarjetas.classList.add("productos__seccion__tarjetas");
     for (let clave in data){
         if(data[clave].categoria == tituloCategoria){
-            console.log(clave , data[clave].id);
             const nuevaTarjeta = crearNuevaTarjeta(data[clave].nombre,data[clave].precio,data[clave].img,data[clave].id);        
             contenedorTarjetas.appendChild(nuevaTarjeta);
         }
